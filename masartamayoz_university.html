@@ -72,6 +72,12 @@ input[type=checkbox]{accent-color:var(--blue2);width:15px;height:15px}
 .reco-title{font-size:13px;font-weight:800;color:var(--blue);margin-bottom:8px}
 .reco-list{display:grid;gap:8px}
 .reco-item{padding:8px 10px;border-radius:10px;background:#fff;border:1px solid var(--border);font-size:12px;color:var(--text)}
+.resource-panel{margin-top:12px;padding:12px;border:1px solid var(--border);border-radius:12px;background:#f8fbff}
+.resource-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.resource-card{padding:10px;border-radius:10px;background:#fff;border:1px solid var(--border)}
+.resource-card .rc-title{font-size:13px;font-weight:800;color:var(--blue);margin-bottom:6px}
+.resource-card a{display:block;padding:6px 0;font-size:12px;color:var(--blue2);text-decoration:none;font-weight:700}
+.resource-card a:hover{color:var(--blue)}
 .bkd-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}.bkd-row:last-child{border-bottom:none}.bkd-row span:last-child{font-weight:700}
 .footer{font-size:12px;color:var(--muted);text-align:center;margin-top:16px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -149,6 +155,18 @@ input[type=checkbox]{accent-color:var(--blue2);width:15px;height:15px}
       <div class="reco-title">اقتراحات أولية للاختصاصات</div>
       <div class="reco-list" id="reco-list"></div>
     </div>
+    <div class="resource-panel" id="resource-panel" style="display:none">
+      <div class="resource-grid">
+        <div class="resource-card">
+          <div class="rc-title">اختصاصات ذات صلة</div>
+          <div id="resource-specialties"></div>
+        </div>
+        <div class="resource-card">
+          <div class="rc-title">جامعات ذات صلة</div>
+          <div id="resource-universities"></div>
+        </div>
+      </div>
+    </div>
     <div class="bkd-row"><span>التنفيل الجغرافي</span><span id="b-geo">—</span></div>
     <div class="bkd-row"><span>التنفيل الاجتماعي</span><span id="b-soc">—</span></div>
     <div class="bkd-row"><span>التنفيل الرياضي</span><span id="b-sp">—</span></div>
@@ -197,6 +215,9 @@ function resetCalc(){
   document.getElementById('progress-dot').style.background = 'var(--green)';
   document.getElementById('reco-list').innerHTML = '';
   document.getElementById('reco-box').style.display='none';
+  document.getElementById('resource-specialties').innerHTML = '';
+  document.getElementById('resource-universities').innerHTML = '';
+  document.getElementById('resource-panel').style.display='none';
   document.getElementById('result').style.display='none';
   document.getElementById('result').classList.remove('show');
   selBac = null;
@@ -238,6 +259,21 @@ function calculate(){
   const recos = Tf >= 180 ? ['طب بشري','هندسة مدنية','تقنيات طبية'] : Tf >= 150 ? ['إدارة أعمال','محاسبة','علوم إعلامية'] : Tf >= 120 ? ['تجارة','تربية','مراسلة'] : ['اختصاصات إدارية','اختصاصات تقنية','اختصاصات تربوية'];
   document.getElementById('reco-list').innerHTML = recos.map(r => `<div class="reco-item">${r}</div>`).join('');
   document.getElementById('reco-box').style.display='block';
+  const branchResources = {
+    'آداب': {specialties:['الإجازة في العربية','الإجازة في التاريخ','الإجازة في الجغرافيا'], universities:['جامعة تونس','جامعة الزيتونة','جامعة منوبة']},
+    'رياضيات': {specialties:['هندسة مدنية','علم الحاسوب','الرياضيات التطبيقية'], universities:['جامعة تونس','جامعة سوسة','جامعة المنستير']},
+    'علوم تجريبية': {specialties:['طب بشري','صيدلة','العلوم البيولوجية'], universities:['جامعة تونس','جامعة سوسة','جامعة قابس']},
+    'اقتصاد وتصرف': {specialties:['إدارة أعمال','محاسبة','اقتصاد'], universities:['جامعة تونس','جامعة القيروان','جامعة قابس']},
+    'علوم تقنية': {specialties:['هندسة كهربائية','هندسة ميكانيكية','تكنولوجيا المعلومات'], universities:['جامعة تونس','جامعة المنستير','جامعة سوسة']},
+    'علوم الإعلامية': {specialties:['علوم الإعلام','اتصال','صحافة'], universities:['جامعة تونس','جامعة سوسة','جامعة تونس المنار']},
+    'رياضة': {specialties:['تربية بدنية','التدريب الرياضي','التربية الرياضية'], universities:['جامعة سوسة','جامعة تونس','جامعة القيروان']}
+  };
+  const chosen = branchResources[selBac] || {specialties:['اختصاصات متنوعة'], universities:['جامعة تونس']};
+  const specialtyLinks = chosen.specialties.map(item => `<a href="https://www.google.com/search?q=${encodeURIComponent('اختصاص '+item+' تونس')}" target="_blank" rel="noopener noreferrer">${item}</a>`).join('');
+  const universityLinks = chosen.universities.map(item => `<a href="https://www.google.com/search?q=${encodeURIComponent(item+' تونس')}" target="_blank" rel="noopener noreferrer">${item}</a>`).join('');
+  document.getElementById('resource-specialties').innerHTML = specialtyLinks;
+  document.getElementById('resource-universities').innerHTML = universityLinks;
+  document.getElementById('resource-panel').style.display='block';
   document.getElementById('result').style.display='block';
   document.getElementById('result').classList.add('show');
   document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
