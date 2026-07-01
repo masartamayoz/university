@@ -215,21 +215,36 @@ body{
 
 /* ─ info cards ─ */
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px}
-.info-card{background:var(--surface);border-radius:var(--r);box-shadow:var(--sh);border:1px solid var(--border);padding:14px;position:relative;overflow:hidden}
-.info-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--gold2),var(--gold));}
+.info-card{
+  background:var(--surface);border-radius:var(--r);box-shadow:var(--sh);border:1px solid var(--border);padding:14px
+}
 .info-card .ic-ttl{font-size:12px;font-weight:700;color:var(--blue);margin-bottom:6px}
 .info-card .ic-val{font-size:20px;font-weight:900;color:var(--gold)}
 .info-card .ic-sub{font-size:11px;color:var(--muted);margin-top:2px}
 
 /* ─ cta banner ─ */
-.cta-banner{background:linear-gradient(135deg,var(--green),#19a16b);border-radius:var(--r);padding:22px 20px;text-align:center;color:#fff;margin-bottom:24px;text-decoration:none;display:block;transition:transform .2s,opacity .2s;box-shadow:0 10px 24px rgba(15,122,86,.2)}
-.cta-banner:hover{opacity:.96;transform:translateY(-2px)}
+.cta-banner{
+  background:linear-gradient(135deg,var(--green),#1a9e66);
+  border-radius:var(--r);padding:22px 20px;
+  text-align:center;color:#fff;margin-bottom:24px;
+  text-decoration:none;display:block;
+  transition:opacity .2s
+}
+.cta-banner:hover{opacity:.93}
 .cta-banner .cb-ttl{font-size:18px;font-weight:900;margin-bottom:6px}
 .cta-banner .cb-sub{font-size:13px;opacity:.85}
-.cta-banner .cb-btn{display:inline-block;margin-top:14px;background:#fff;color:var(--green);font-size:14px;font-weight:900;padding:10px 28px;border-radius:999px}
+.cta-banner .cb-btn{
+  display:inline-block;margin-top:14px;
+  background:#fff;color:var(--green);
+  font-size:14px;font-weight:900;
+  padding:10px 28px;border-radius:30px
+}
 
 /* ─ footer ─ */
-.footer{background:linear-gradient(135deg,var(--blue),#143a6f);color:rgba(255,255,255,.72);text-align:center;padding:16px;font-size:12px;border-top:1px solid rgba(255,255,255,.12)}
+.footer{
+  background:var(--blue);color:rgba(255,255,255,.65);
+  text-align:center;padding:16px;font-size:12px
+}
 .footer strong{color:var(--gold2)}
 
 @media(max-width:400px){
@@ -237,7 +252,7 @@ body{
   .tool-card.full{grid-column:1}
   .info-grid{grid-template-columns:1fr}
   .hero h1{font-size:21px}
-  .hero-stats{gap:12px}
+  .hero-stats{gap:16px}
 }
 </style>
 </head>

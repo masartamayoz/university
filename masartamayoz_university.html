@@ -1,282 +1,1588 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>حاسبة التوجيه الجامعي 2026 | المسار الجامعي</title>
-<meta name="description" content="حاسبة التوجيه الجامعي 2026 مع التنفيلات ونقاط آخر موجه للسنوات 2023-2025.">
+
+<!-- ═ Primary SEO ═ -->
+<title>حاسبة التوجيه الجامعي 2026 ونقاط آخر موجه | المسار الجامعي</title>
+<meta name="description" content="احسب مجموعك مع التنفيل الجغرافي والاجتماعي، وابحث في 688 اختصاص جامعي بنقاط آخر موجه 2023-2025. أداة مجانية لناجحي الباكالوريا التونسية.">
+<meta name="keywords" content="حاسبة مجموع الباكالوريا، نقاط آخر موجه 2025، توجيه جامعي تونس، FG الصيغة الإجمالية، تنفيل جغرافي">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://university.masartamayoz.com/masartamayoz_university.html">
+
+<!-- ═ Open Graph ═ -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://university.masartamayoz.com/masartamayoz_university.html">
+<meta property="og:site_name"   content="المسار الجامعي">
+<meta property="og:title"       content="حاسبة التوجيه الجامعي 2026 ونقاط آخر موجه | المسار الجامعي">
+<meta property="og:description" content="احسب مجموعك مع التنفيلات وابحث في 688 اختصاص بنقاط 2023/2024/2025">
+<meta property="og:image"       content="https://university.masartamayoz.com/og-image.jpg">
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale"      content="ar_TN">
+
+<!-- ═ Twitter Card ═ -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:site"        content="@masartamayoz">
+<meta name="twitter:title"       content="حاسبة التوجيه الجامعي 2026 | المسار الجامعي">
+<meta name="twitter:description" content="688 اختصاص · نقاط آخر موجه · مجاناً">
+<meta name="twitter:image"       content="https://university.masartamayoz.com/og-image.jpg">
+
+<!-- ═ Schema.org EducationalApplication ═ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "حاسبة التوجيه الجامعي 2026 — المسار الجامعي",
+  "url": "https://university.masartamayoz.com/masartamayoz_university.html",
+  "description": "حساب مجموع التوجيه الجامعي مع التنفيلات ومقارنة نقاط آخر موجه لـ688 اختصاص في تونس",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web Browser",
+  "inLanguage": "ar",
+  "isAccessibleForFree": true,
+  "dateModified": "2026-06-01",
+  "offers": { "@type": "Offer", "price": "0" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "المسار الجامعي", "item": "https://university.masartamayoz.com" },
+      { "@type": "ListItem", "position": 2, "name": "حاسبة التوجيه", "item": "https://university.masartamayoz.com/masartamayoz_university.html" }
+    ]
+  }
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --blue:#143a6f;--blue2:#2457a8;--blue3:#eaf2ff;--blue4:#f6f9ff;
-  --gold:#c9920b;--gold2:#f6b800;--gold3:#fff7d6;
-  --green:#0f7a56;--green2:#eaf8f2;
+  --blue:#1a3a6b;--blue2:#2552a0;--blue3:#e8eef8;--blue4:#f0f4fb;
+  --gold:#c8960c;--gold2:#f5b800;--gold3:#fffbea;
+  --green:#0d7a4e;--green2:#e6f7f0;
   --red:#cc1f1f;--red2:#fdf0f0;
   --orange:#d97706;--orange2:#fff7ed;
-  --bg:#f5f8fd;--surface:#fff;
-  --border:#e3eaf5;--border2:#c8d3e6;
-  --text:#182233;--muted:#6b7689;--muted2:#9aa4b2;
-  --r:14px;--r2:10px;--sh:0 10px 32px rgba(20,58,111,.10);
+  --bg:#f4f6fb;--surface:#fff;
+  --border:#e2e6f0;--border2:#c8d0e4;
+  --text:#1a1f2e;--muted:#6b7280;--muted2:#9ca3af;
+  --r:12px;--r2:9px;--sh:0 2px 16px rgba(26,58,107,.09);
 }
-body{
-  font-family:'Cairo',sans-serif;
-  background:linear-gradient(180deg,#f7faff 0%,#eef4ff 100%);
-  color:var(--text);min-height:100vh
-}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+
+/* ═══ HEADER ═══ */
 .hdr{
-  background:linear-gradient(135deg,var(--blue) 0%,#1e57a8 55%,#102c57 100%);
-  color:#fff;padding:18px 20px 16px;border-bottom:4px solid var(--gold2);box-shadow:0 8px 24px rgba(20,58,111,.16);display:flex;align-items:center;justify-content:space-between;gap:12px
+  background:var(--blue);color:#fff;
+  padding:14px 20px 12px;
+  border-bottom:3px solid var(--gold2);
+  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:100
 }
-.hdr-logo{font-size:22px;font-weight:900;letter-spacing:.01em}.hdr-logo span{color:var(--gold2)}
-.hdr-sub{font-size:12px;color:rgba(255,255,255,.78);font-weight:700}
-.wrap{max-width:780px;margin:0 auto;padding:24px 14px 60px}
-.card{background:linear-gradient(180deg,#ffffff 0%,#fcfdff 100%);border-radius:16px;box-shadow:var(--sh);padding:18px;margin-bottom:16px;border:1px solid var(--border);transition:transform .2s,box-shadow .2s}
-.card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(20,58,111,.14)}
-.card-ttl{font-size:15px;font-weight:800;color:var(--blue);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gold2)}
-.info-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
-.info-pill{background:#f8fbff;border:1px solid var(--border);border-radius:12px;padding:10px;text-align:center}
-.info-pill .ip-title{font-size:11px;color:var(--muted);margin-bottom:4px}
-.info-pill .ip-value{font-size:15px;font-weight:900;color:var(--blue)}
-.formula-box{background:linear-gradient(135deg,#f7fbff 0%,#eef6ff 100%);border:1px solid var(--border);border-radius:12px;padding:12px}
-.formula-label{font-size:12px;font-weight:800;color:var(--blue);margin-bottom:6px}
-.formula-text{font-size:13px;color:var(--text);font-weight:700;margin-bottom:4px}
-.formula-note{font-size:11px;color:var(--muted);line-height:1.6}
-.progress-card{display:flex;align-items:center;justify-content:space-between;gap:10px;background:linear-gradient(135deg,#f8fbff 0%,#eef6ff 100%);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:12px}
-.progress-card .pc-title{font-size:13px;font-weight:800;color:var(--blue)}
-.progress-card .pc-sub{font-size:11px;color:var(--muted);margin-top:2px}
-.progress-dot{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(15,122,86,.14)}
-.field{margin-bottom:12px}
+.hdr-logo{font-size:19px;font-weight:900}
+.hdr-logo span{color:var(--gold2)}
+.hdr-sub{font-size:11px;opacity:.65;margin-top:1px}
+
+/* ═══ TABS ═══ */
+.tab-bar{
+  background:var(--blue);
+  display:flex;border-top:1px solid rgba(255,255,255,.12)
+}
+.tab-bar a, .tab-bar button{
+  flex:1;padding:12px 8px;
+  background:none;border:none;
+  font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;
+  color:rgba(255,255,255,.6);cursor:pointer;
+  border-bottom:3px solid transparent;
+  transition:all .2s;text-align:center;text-decoration:none
+}
+.tab-bar .tab-btn.active{color:#fff;border-bottom-color:var(--gold2)}
+.tab-bar .tab-btn:hover{color:rgba(255,255,255,.9)}
+
+/* ═══ PANELS ═══ */
+.panel{display:none}
+.panel.active{display:block}
+
+/* ═══ PAGE HERO ═══ */
+.hero{
+  background:linear-gradient(135deg,var(--blue) 0%,var(--blue2) 100%);
+  color:#fff;text-align:center;padding:22px 20px 18px
+}
+.hero h1{font-size:19px;font-weight:900}
+.hero p{font-size:12px;opacity:.8;margin-top:5px}
+
+/* ═══ CONTAINER ═══ */
+.wrap{max-width:660px;margin:0 auto;padding:16px 14px 70px}
+
+/* ═══ CARD ═══ */
+.card{
+  background:var(--surface);border-radius:var(--r);
+  box-shadow:var(--sh);padding:18px;
+  margin-bottom:14px;border:1px solid var(--border)
+}
+.card-ttl{
+  font-size:14px;font-weight:700;color:var(--blue);
+  margin-bottom:14px;padding-bottom:10px;
+  border-bottom:2px solid var(--gold2);
+  display:flex;align-items:center;gap:8px
+}
+.step-num{
+  background:var(--blue);color:#fff;
+  border-radius:50%;width:24px;height:24px;
+  display:grid;place-items:center;
+  font-size:12px;font-weight:700;flex-shrink:0
+}
+
+/* ═══ FORM ═══ */
+.field{margin-bottom:13px}
 label{display:block;font-size:12px;font-weight:700;color:var(--blue);margin-bottom:5px}
-select,input[type=number]{width:100%;padding:11px 14px;border:1.5px solid var(--border2);border-radius:var(--r2);font-family:'Cairo',sans-serif;font-size:14px;background:#fdfefe;transition:border-color .2s,box-shadow .2s}
-select:focus,input[type=number]:focus{outline:none;border-color:var(--blue2);box-shadow:0 0 0 3px rgba(36,87,168,.14)}
-.sub-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.tog-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.tog{padding:10px 8px;border:1.5px solid var(--border2);border-radius:var(--r2);background:var(--blue4);font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;color:var(--muted);cursor:pointer;transition:all .2s}.tog:hover{transform:translateY(-1px);border-color:var(--blue2)}.tog.active{background:linear-gradient(135deg,var(--blue) 0%,var(--blue2) 100%);color:#fff;border-color:var(--blue);box-shadow:0 8px 16px rgba(20,58,111,.16)}
-.note,.warn{padding:10px 12px;border-radius:var(--r2);font-size:12px;margin-bottom:10px;line-height:1.6}.note{background:var(--green2);color:#144d32}.warn{background:var(--orange2);color:#7c3d00}
-.helper-panel{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;border:1px solid var(--border);border-radius:var(--r2);background:var(--blue4);margin-bottom:12px}
-.helper-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#fff;color:var(--blue);font-size:12px;font-weight:800;border:1px solid var(--border)}
-.helper-text{font-size:12px;color:var(--muted)}
-#c-tenfil label{display:flex;align-items:center;gap:8px;padding:6px 0;color:var(--text)}
-input[type=checkbox]{accent-color:var(--blue2);width:15px;height:15px}
-.btn-row{display:grid;grid-template-columns:1.5fr .8fr;gap:10px;margin-top:10px}
-.btn-calc,.btn-reset{padding:15px;border:none;border-radius:14px;font-family:'Cairo',sans-serif;font-size:16px;font-weight:900;cursor:pointer;transition:transform .2s,box-shadow .2s}
-.btn-calc{background:linear-gradient(135deg,var(--blue) 0%,var(--blue2) 100%);color:#fff;box-shadow:0 10px 20px rgba(20,58,111,.16)}
-.btn-calc:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(20,58,111,.2)}
-.btn-reset{background:#f2f5fa;color:var(--blue);border:1px solid var(--border)}
-.btn-reset:hover{transform:translateY(-1px)}
-.result{display:none;background:var(--surface);border-radius:16px;box-shadow:var(--sh);padding:18px;border:1px solid var(--border)}
-.result.show{animation:fadeUp .25s ease}
-.result-hero{background:linear-gradient(135deg,var(--blue) 0%,#1f5bb7 100%);color:#fff;padding:20px;text-align:center;border-radius:14px;margin-bottom:12px;box-shadow:inset 0 1px 0 rgba(255,255,255,.18)}
-.result-note{margin-top:8px;font-size:12px;color:rgba(255,255,255,.84)}
-.r-big{font-size:54px;font-weight:900;color:var(--gold2)}
-.reco-box{margin-top:12px;padding:12px;border:1px solid var(--border);border-radius:12px;background:#f8fbff}
-.reco-title{font-size:13px;font-weight:800;color:var(--blue);margin-bottom:8px}
-.reco-list{display:grid;gap:8px}
-.reco-item{padding:8px 10px;border-radius:10px;background:#fff;border:1px solid var(--border);font-size:12px;color:var(--text)}
-.resource-panel{margin-top:12px;padding:12px;border:1px solid var(--border);border-radius:12px;background:#f8fbff}
-.resource-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.resource-card{padding:10px;border-radius:10px;background:#fff;border:1px solid var(--border)}
-.resource-card .rc-title{font-size:13px;font-weight:800;color:var(--blue);margin-bottom:6px}
-.resource-card a{display:block;padding:6px 0;font-size:12px;color:var(--blue2);text-decoration:none;font-weight:700}
-.resource-card a:hover{color:var(--blue)}
-.bkd-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}.bkd-row:last-child{border-bottom:none}.bkd-row span:last-child{font-weight:700}
-.footer{font-size:12px;color:var(--muted);text-align:center;margin-top:16px}
-@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:560px){.sub-grid,.tog-g,.btn-row{grid-template-columns:1fr}}
+.req{color:var(--red);margin-right:2px}
+
+select,input[type=number],input[type=text]{
+  width:100%;padding:10px 14px;
+  border:1.5px solid var(--border);border-radius:var(--r2);
+  font-family:'Cairo',sans-serif;font-size:14px;
+  color:var(--text);background:var(--bg);
+  appearance:none;-webkit-appearance:none;
+  transition:border-color .2s
+}
+select:focus,input:focus{outline:none;border-color:var(--blue2);background:#fff}
+.sel-w{position:relative}
+.sel-w::after{
+  content:'▾';position:absolute;left:13px;top:50%;
+  transform:translateY(-50%);color:var(--muted);
+  pointer-events:none;font-size:13px
+}
+
+/* ═══ TOGGLE BUTTONS ═══ */
+.tog-g{display:flex;gap:7px;flex-wrap:wrap}
+.tog{
+  flex:1;min-width:80px;padding:9px 8px;
+  border:1.5px solid var(--border);border-radius:var(--r2);
+  background:var(--bg);font-family:'Cairo',sans-serif;
+  font-size:12px;font-weight:700;color:var(--muted);
+  cursor:pointer;text-align:center;transition:all .15s
+}
+.tog:hover{border-color:var(--blue2);color:var(--blue2)}
+.tog.active{background:var(--blue);border-color:var(--blue);color:#fff}
+
+/* ═══ SUBJECTS GRID ═══ */
+.sub-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.sub-grid .field{margin-bottom:0}
+.sub-grid label{font-size:11px;color:var(--muted)}
+
+/* ═══ BONUS CHECKBOXES ═══ */
+.chk-row{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 13px;background:var(--bg);
+  border-radius:var(--r2);border:1.5px solid var(--border);
+  margin-bottom:8px;cursor:pointer;transition:border-color .15s
+}
+.chk-row:hover{border-color:var(--blue2)}
+.chk-row input{width:18px;height:18px;accent-color:var(--blue);cursor:pointer;flex-shrink:0}
+.chk-label{font-size:13px;font-weight:600;flex:1}
+.chk-tag{
+  font-size:10px;font-weight:700;padding:2px 8px;
+  border-radius:20px;background:var(--gold3);color:var(--gold)
+}
+
+/* ═══ NOTES ═══ */
+.note{
+  background:var(--green2);border-right:3px solid var(--green);
+  border-radius:0 var(--r2) var(--r2) 0;
+  padding:9px 13px;font-size:12px;color:#144d32;margin-bottom:12px
+}
+.warn{
+  background:var(--orange2);border-right:3px solid var(--orange);
+  border-radius:0 var(--r2) var(--r2) 0;
+  padding:9px 13px;font-size:12px;color:#7c3d00;margin-bottom:12px
+}
+
+/* ═══ CALC BUTTON ═══ */
+.btn-calc{
+  width:100%;padding:15px;
+  background:var(--blue);color:#fff;border:none;
+  border-radius:var(--r);font-family:'Cairo',sans-serif;
+  font-size:17px;font-weight:900;cursor:pointer;
+  transition:background .2s,transform .1s
+}
+.btn-calc:hover{background:var(--blue2)}
+.btn-calc:active{transform:scale(.98)}
+.btn-sec{background:var(--muted)}
+.btn-sec:hover{background:#4b5563}
+
+/* ═══ RESULT BOX ═══ */
+.result-hero{
+  background:var(--blue);border-radius:var(--r);
+  padding:26px 20px 20px;text-align:center;color:#fff;
+  margin-bottom:14px;position:relative;overflow:hidden
+}
+.result-hero::before{
+  content:'';position:absolute;top:0;left:0;right:0;
+  height:3px;background:var(--gold2)
+}
+.r-lbl{font-size:12px;opacity:.7;margin-bottom:4px}
+.r-big{
+  font-size:62px;font-weight:900;color:var(--gold2);
+  line-height:1;letter-spacing:-2px
+}
+.r-sub{font-size:12px;opacity:.65;margin-top:4px}
+
+/* breakdown */
+.bkd{
+  background:var(--surface);border-radius:var(--r);
+  border:1px solid var(--border);overflow:hidden;margin-bottom:14px
+}
+.bkd-hdr{
+  background:var(--blue4);padding:11px 15px;
+  font-size:12px;font-weight:700;color:var(--blue);
+  border-bottom:1px solid var(--border)
+}
+.bkd-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 15px;border-bottom:1px solid var(--border);font-size:13px
+}
+.bkd-row:last-child{border-bottom:none}
+.bkd-k{color:var(--muted)}
+.bkd-v{font-weight:700;color:var(--blue)}
+.bkd-row.tot{background:var(--blue4);font-size:15px}
+.bkd-row.tot .bkd-v{color:var(--gold);font-size:17px}
+
+/* CTA to jadwal */
+.cta-jadwal{
+  background:linear-gradient(135deg,#0d7a4e,#1d9e65);
+  border-radius:var(--r);padding:18px 20px;
+  color:#fff;text-align:center;margin-bottom:14px;
+  cursor:pointer;transition:opacity .2s
+}
+.cta-jadwal:hover{opacity:.92}
+.cta-jadwal .cta-score{
+  font-size:13px;opacity:.85;margin-bottom:6px
+}
+.cta-jadwal .cta-big{font-size:20px;font-weight:900}
+.cta-jadwal .cta-sub{font-size:12px;opacity:.8;margin-top:4px}
+.cta-arrow{font-size:20px;margin-top:8px}
+
+/* formula */
+.fml{
+  background:var(--gold3);border:1.5px solid var(--gold2);
+  border-radius:var(--r2);padding:11px 14px;margin-bottom:12px
+}
+.fml-lbl{font-size:11px;font-weight:700;color:var(--gold);margin-bottom:3px}
+.fml-eq{font-size:12px;font-weight:600;direction:ltr;text-align:center;color:var(--text)}
+
+/* ═══ JADWAL PANEL ═══ */
+.filter-card{
+  background:var(--surface);border-radius:var(--r);
+  box-shadow:var(--sh);padding:16px;
+  margin-bottom:12px;border:1px solid var(--border)
+}
+.f-sec{font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px}
+
+.srch-w{position:relative;margin-bottom:10px}
+.srch-w input{padding-right:14px;padding-left:38px}
+.srch-w .si{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:15px;color:var(--muted)}
+
+.chips{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}
+.chip{
+  padding:5px 11px;border-radius:20px;
+  border:1.5px solid var(--border);
+  background:var(--bg);font-family:'Cairo',sans-serif;
+  font-size:12px;font-weight:700;color:var(--muted);
+  cursor:pointer;transition:all .15s;white-space:nowrap
+}
+.chip:hover{border-color:var(--blue2);color:var(--blue2)}
+.chip.active{background:var(--blue);border-color:var(--blue);color:#fff}
+
+.sel-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.sel-row .sel-w{flex:1;min-width:130px}
+
+.my-score-row{
+  display:flex;align-items:center;gap:8px;
+  background:var(--blue4);border-radius:var(--r2);
+  padding:10px 14px
+}
+.my-score-row label{font-size:12px;font-weight:700;color:var(--blue);white-space:nowrap;margin:0}
+.my-score-row input{
+  width:120px;padding:7px 11px;font-size:15px;font-weight:700;
+  border-color:var(--border);background:#fff
+}
+.my-score-row .msr-hint{font-size:11px;color:var(--muted)}
+
+.stats-bar{
+  display:flex;align-items:center;gap:8px;
+  padding:9px 13px;background:var(--blue3);
+  border-radius:var(--r2);margin-bottom:11px;
+  font-size:12px;color:var(--blue2)
+}
+.stats-bar strong{font-size:14px;font-weight:900}
+.stats-match{margin-right:auto;font-size:11px;font-weight:700}
+
+/* spec cards */
+.spec-list{display:flex;flex-direction:column;gap:9px}
+.spec-card{
+  background:var(--surface);border-radius:var(--r);
+  box-shadow:var(--sh);border:1px solid var(--border);
+  overflow:hidden
+}
+.spec-head{
+  padding:12px 15px 10px;
+  display:flex;justify-content:space-between;
+  align-items:flex-start;gap:10px
+}
+.spec-name{font-size:13px;font-weight:700;line-height:1.4}
+.spec-inst{font-size:11px;color:var(--muted);margin-top:2px}
+.spec-univ-badge{
+  font-size:10px;font-weight:700;color:var(--blue2);
+  background:var(--blue3);padding:3px 9px;
+  border-radius:20px;white-space:nowrap;flex-shrink:0
+}
+
+/* match badge */
+.mbadge{
+  display:inline-flex;align-items:center;
+  font-size:10px;font-weight:700;
+  padding:2px 8px;border-radius:20px;margin-top:5px
+}
+.mb-easy{background:#dcfce7;color:#166534}
+.mb-ok{background:#fef9c3;color:#854d0e}
+.mb-hard{background:#fee2e2;color:#991b1b}
+.mb-no{background:var(--border);color:var(--muted)}
+
+/* score cells */
+.spec-scores{
+  border-top:1px solid var(--border);
+  padding:10px 15px 12px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:5px
+}
+.sc-cell{text-align:center}
+.sc-yr{font-size:10px;color:var(--muted);margin-bottom:2px}
+.sc-v{
+  font-size:14px;font-weight:900;
+  padding:4px 5px;border-radius:6px;display:block
+}
+.sv-easy{background:#dcfce7;color:#166534}
+.sv-ok{background:#fef9c3;color:#854d0e}
+.sv-hard{background:#fee2e2;color:#991b1b}
+.sv-neutral{background:var(--blue3);color:var(--blue2)}
+.sv-na{color:var(--muted2);font-size:11px;font-weight:400}
+
+.empty{text-align:center;padding:36px 20px;color:var(--muted)}
+.empty .ei{font-size:38px;margin-bottom:8px}
+
+.btn-more{
+  width:100%;padding:12px;margin-top:12px;
+  background:var(--surface);border:1.5px solid var(--border);
+  border-radius:var(--r);font-family:'Cairo',sans-serif;
+  font-size:13px;font-weight:700;color:var(--blue2);cursor:pointer;
+  transition:all .15s
+}
+.btn-more:hover{background:var(--blue3);border-color:var(--blue2)}
+.pag-info{text-align:center;font-size:11px;color:var(--muted);margin-top:6px}
+
+@media(max-width:400px){
+  .sub-grid{grid-template-columns:1fr}
+  .r-big{font-size:50px}
+}
+
+/* ═══ MODAL ═══ */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(10,20,50,.55);
+  z-index:1000;display:none;align-items:flex-end;
+  backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)
+}
+.modal-overlay.open{display:flex}
+.modal{
+  background:var(--surface);border-radius:20px 20px 0 0;
+  width:100%;max-height:90vh;overflow-y:auto;
+  padding:0 0 32px;
+  animation:slideUp .28s cubic-bezier(.4,0,.2,1)
+}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.modal-handle{
+  width:40px;height:4px;border-radius:2px;
+  background:var(--border2);margin:12px auto 0
+}
+.modal-hdr{
+  padding:14px 18px 12px;
+  border-bottom:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:flex-start;gap:10px;
+  position:sticky;top:0;background:var(--surface);z-index:2
+}
+.modal-ttl{font-size:15px;font-weight:800;color:var(--blue);line-height:1.4}
+.modal-inst{font-size:11px;color:var(--muted);margin-top:3px}
+.modal-close{
+  width:30px;height:30px;border-radius:50%;
+  background:var(--bg);border:none;cursor:pointer;
+  font-size:16px;display:grid;place-items:center;
+  flex-shrink:0;color:var(--muted)
+}
+.modal-body{padding:16px 18px 0}
+.modal-univ-badge{
+  display:inline-block;
+  background:var(--blue3);color:var(--blue2);
+  font-size:11px;font-weight:700;
+  padding:3px 12px;border-radius:20px;margin-bottom:14px
+}
+
+/* full bac table */
+.bac-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:18px}
+.bac-table th{
+  background:var(--blue);color:#fff;
+  padding:8px 10px;font-size:11px;font-weight:700;
+  text-align:center
+}
+.bac-table th:first-child{text-align:right}
+.bac-table td{
+  padding:9px 10px;border-bottom:1px solid var(--border);
+  text-align:center;font-weight:700
+}
+.bac-table td:first-child{text-align:right;font-size:12px;color:var(--muted);font-weight:600}
+.bac-table tr:last-child td{border-bottom:none}
+.bac-table tr:hover td{background:var(--blue4)}
+
+.td-easy{color:#166534;background:#dcfce7;border-radius:5px;padding:3px 7px}
+.td-ok{color:#854d0e;background:#fef9c3;border-radius:5px;padding:3px 7px}
+.td-hard{color:#991b1b;background:#fee2e2;border-radius:5px;padding:3px 7px}
+.td-na{color:var(--muted2);font-weight:400;font-size:11px}
+
+/* mini chart */
+.chart-section{margin-bottom:18px}
+.chart-ttl{font-size:12px;font-weight:700;color:var(--blue);margin-bottom:10px}
+.mini-chart{position:relative;height:160px;background:var(--bg);border-radius:10px;padding:14px 10px 28px}
+.chart-canvas{width:100%;height:100%}
+
+/* modal footer cta */
+.modal-cta{
+  margin:4px 18px 0;
+  background:var(--blue);color:#fff;
+  border:none;border-radius:var(--r);
+  width:calc(100% - 36px);padding:13px;
+  font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;
+  cursor:pointer;transition:background .2s
+}
+.modal-cta:hover{background:var(--blue2)}
+
+/* trend arrow */
+.trend{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;margin-bottom:12px}
+.trend-up{color:var(--green)}
+.trend-dn{color:var(--red)}
+.trend-flat{color:var(--muted)}
+
+
+/* ═══ AI CHAT PANEL ═══ */
+.ai-hero{
+  background:linear-gradient(135deg,#1a1f4e 0%,#2d2f8f 100%);
+  color:#fff;text-align:center;padding:20px 20px 16px
+}
+.ai-hero h1{font-size:18px;font-weight:900}
+.ai-hero p{font-size:12px;opacity:.75;margin-top:4px}
+
+.chat-wrap{
+  max-width:660px;margin:0 auto;
+  padding:14px 14px 0;
+  display:flex;flex-direction:column;
+  height:calc(100vh - 200px);min-height:400px
+}
+
+/* suggestions */
+.ai-suggestions{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.ai-sug{
+  padding:7px 13px;border-radius:20px;
+  border:1.5px solid var(--border);
+  background:var(--surface);font-family:'Cairo',sans-serif;
+  font-size:12px;font-weight:600;color:var(--blue2);
+  cursor:pointer;transition:all .15s;text-align:right
+}
+.ai-sug:hover{background:var(--blue3);border-color:var(--blue2)}
+
+/* messages area */
+.chat-msgs{
+  flex:1;overflow-y:auto;
+  display:flex;flex-direction:column;gap:12px;
+  padding-bottom:12px;
+  scrollbar-width:thin
+}
+
+.msg{display:flex;gap:10px;align-items:flex-end}
+.msg.user{flex-direction:row-reverse}
+
+.msg-avatar{
+  width:32px;height:32px;border-radius:50%;
+  display:grid;place-items:center;font-size:16px;
+  flex-shrink:0
+}
+.msg.ai .msg-avatar{background:linear-gradient(135deg,#1a1f4e,#2d2f8f)}
+.msg.user .msg-avatar{background:var(--blue);font-size:13px;font-weight:700;color:#fff}
+
+.msg-bubble{
+  max-width:82%;padding:11px 14px;border-radius:16px;
+  font-size:13px;line-height:1.65
+}
+.msg.ai   .msg-bubble{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:4px 16px 16px 16px;color:var(--text)
+}
+.msg.user .msg-bubble{
+  background:var(--blue);color:#fff;
+  border-radius:16px 4px 16px 16px
+}
+
+.msg-time{font-size:10px;color:var(--muted2);margin-top:4px;text-align:center}
+
+/* typing indicator */
+.typing-dots{display:flex;gap:4px;padding:4px 0}
+.typing-dots span{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--muted);display:block;
+  animation:tdot 1.2s infinite ease-in-out
+}
+.typing-dots span:nth-child(2){animation-delay:.2s}
+.typing-dots span:nth-child(3){animation-delay:.4s}
+@keyframes tdot{0%,80%,100%{transform:scale(.7);opacity:.5}40%{transform:scale(1);opacity:1}}
+
+/* input bar */
+.chat-input-bar{
+  border-top:1px solid var(--border);
+  padding:12px 14px 16px;
+  background:var(--bg);
+  display:flex;gap:8px;align-items:flex-end
+}
+.chat-input{
+  flex:1;padding:10px 14px;
+  border:1.5px solid var(--border);border-radius:22px;
+  font-family:'Cairo',sans-serif;font-size:14px;
+  background:var(--surface);color:var(--text);
+  resize:none;line-height:1.5;max-height:100px;
+  transition:border-color .2s
+}
+.chat-input:focus{outline:none;border-color:var(--blue2)}
+.chat-send{
+  width:40px;height:40px;border-radius:50%;
+  background:var(--blue);border:none;cursor:pointer;
+  color:#fff;font-size:16px;flex-shrink:0;
+  display:grid;place-items:center;
+  transition:background .15s,transform .1s
+}
+.chat-send:hover{background:var(--blue2)}
+.chat-send:active{transform:scale(.92)}
+.chat-send:disabled{background:var(--border);cursor:default}
+
+/* context pill */
+.ctx-pill{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--gold3);border:1px solid var(--gold2);
+  border-radius:20px;padding:4px 12px;font-size:11px;
+  font-weight:700;color:var(--gold);margin-bottom:10px;
+  cursor:pointer
+}
+.ctx-pill:hover{background:#fef3c7}
+
 </style>
 </head>
 <body>
-<div class="hdr"><div><div class="hdr-logo">مسار <span>التميز</span></div><div class="hdr-sub">حاسبة التوجيه الجامعي 2026</div></div><div class="hdr-sub">مجاناً · بدون تسجيل</div></div>
-<div class="wrap">
-  <div class="card">
-    <div class="card-ttl">🧮 حاسبة التوجيه الجامعي 2026</div>
-    <div class="note">اختر شعبتك وأدخل معلوماتك لحساب مجموعك التقريبي.</div>
-    <div class="helper-panel">
-      <div class="helper-badge" id="branch-helper">🔎 لم يتم اختيار شعبة بعد</div>
-      <div class="helper-text">أدخل المعدلات على شكل أرقام مثل 14.50 ثم اضغط على الحساب.</div>
-    </div>
-    <div class="info-strip">
-      <div class="info-pill"><div class="ip-title">التنفيل الجغرافي</div><div class="ip-value">+7%</div></div>
-      <div class="info-pill"><div class="ip-title">التنفيل الاجتماعي</div><div class="ip-value">+5%</div></div>
-      <div class="info-pill"><div class="ip-title">دورة المراقبة</div><div class="ip-value">+3%</div></div>
-    </div>
-    <div class="formula-box">
-      <div class="formula-label">الصيغة العامة</div>
-      <div class="formula-text">FG = 4 × MG + مجموع معاملات المواد</div>
-      <div class="formula-note">ثم تُضاف التنفيلات على المجموع النهائي T ليظهر لك النتيجة النهائية بصيغة واضحة.</div>
-    </div>
-    <div class="progress-card">
-      <div>
-        <div class="pc-title" id="progress-title">حالة الملء</div>
-        <div class="pc-sub" id="progress-sub">اختر شعبة ثم املأ المعدلات العامة والمواد المطلوبة.</div>
-      </div>
-      <div class="progress-dot" id="progress-dot"></div>
-    </div>
-    <div class="tog-g" id="bac-g">
-      <button class="tog" data-bac="آداب" onclick="pickBac(this)">آداب</button>
-      <button class="tog" data-bac="رياضيات" onclick="pickBac(this)">رياضيات</button>
-      <button class="tog" data-bac="علوم تجريبية" onclick="pickBac(this)">علوم تجريبية</button>
-      <button class="tog" data-bac="اقتصاد وتصرف" onclick="pickBac(this)">اقتصاد</button>
-      <button class="tog" data-bac="علوم تقنية" onclick="pickBac(this)">تقنية</button>
-      <button class="tog" data-bac="علوم الإعلامية" onclick="pickBac(this)">إعلامية</button>
-      <button class="tog" data-bac="رياضة" onclick="pickBac(this)">رياضة</button>
-    </div>
+
+<!-- ═══ HEADER ═══ -->
+<div class="hdr">
+  <div>
+    <div class="hdr-logo">مسار <span>التميز</span></div>
+    <div class="hdr-sub">university.masartamayoz.com</div>
   </div>
-  <div class="card" id="c-grades" style="display:none">
-    <div class="card-ttl">📘 معدلات المواد</div>
-    <div class="sub-grid" id="sub-grid"></div>
-    <div class="field" style="margin-top:10px">
-      <label>المعدل العام (MG)</label>
-      <input type="number" id="mg" min="0" max="20" step="0.01" placeholder="مثال: 13.75">
-    </div>
-    <div class="field">
-      <label>الدورة</label>
-      <select id="session">
-        <option value="main">الدورة الرئيسية</option>
-        <option value="ctrl">دورة المراقبة</option>
-      </select>
-    </div>
-  </div>
-  <div class="card" id="c-tenfil" style="display:none">
-    <div class="card-ttl">✨ التنفيلات</div>
-    <div class="warn">يتم إضافة التنفيلات على مجموع T.</div>
-    <label><input type="checkbox" id="t-geo"> التنفيل الجغرافي (+7%)</label><br>
-    <label><input type="checkbox" id="t-soc"> التنفيل الاجتماعي (+5%)</label><br>
-    <label><input type="checkbox" id="t-sib"> أخ/أخت في دورة المراقبة (+3%)</label><br>
-    <label><input type="checkbox" id="t-sp"> تنفيل رياضي (+5%)</label>
-  </div>
-  <div class="btn-row">
-    <button class="btn-calc" onclick="calculate()">احسب مجموعي ←</button>
-    <button class="btn-reset" type="button" onclick="resetCalc()">إعادة تعيين</button>
-  </div>
-  <div class="result" id="result" style="margin-top:14px">
-    <div class="result-hero"><div>مجموعك النهائي (T)</div><div class="r-big" id="r-big">—</div><div class="result-note" id="result-note">—</div></div>
-    <div class="bkd-row"><span>الصيغة الإجمالية FG</span><span id="b-fg">—</span></div>
-    <div class="reco-box" id="reco-box" style="display:none">
-      <div class="reco-title">اقتراحات أولية للاختصاصات</div>
-      <div class="reco-list" id="reco-list"></div>
-    </div>
-    <div class="resource-panel" id="resource-panel" style="display:none">
-      <div class="resource-grid">
-        <div class="resource-card">
-          <div class="rc-title">اختصاصات ذات صلة</div>
-          <div id="resource-specialties"></div>
-        </div>
-        <div class="resource-card">
-          <div class="rc-title">جامعات ذات صلة</div>
-          <div id="resource-universities"></div>
-        </div>
-      </div>
-    </div>
-    <div class="bkd-row"><span>التنفيل الجغرافي</span><span id="b-geo">—</span></div>
-    <div class="bkd-row"><span>التنفيل الاجتماعي</span><span id="b-soc">—</span></div>
-    <div class="bkd-row"><span>التنفيل الرياضي</span><span id="b-sp">—</span></div>
-    <div class="bkd-row"><span><strong>المجموع النهائي T</strong></span><span id="b-tot">—</span></div>
-  </div>
-  <div class="footer">المسار الجامعي · معلومات عامة للمتابعة والتخطيط.</div>
+  <a href="index.html" class="tab-btn" style="color:#fff;text-decoration:none;font-size:13px;font-weight:700">🏠 الرئيسية</a>
 </div>
+
+<!-- ═══ TAB BAR ═══ -->
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="switchTab('calc',this)">🧮 حاسبة المجموع</button>
+  <button class="tab-btn" onclick="switchTab('jadwal',this)">📊 نقاط آخر موجه</button>
+  <button class="tab-btn" onclick="switchTab('ai',this)">🤖 مساعد ذكي</button>
+</div>
+
+<!-- ════════════════════════════════════
+     PANEL 1 — CALCULATOR
+════════════════════════════════════ -->
+<div id="panel-calc" class="panel active">
+  <div class="hero">
+    <h1>🎓 حاسبة التوجيه الجامعي 2026</h1>
+    <p>احسب مجموعك الحقيقي مع جميع التنفيلات</p>
+  </div>
+
+  <div class="wrap">
+
+    <!-- STEP 1 -->
+    <div class="card">
+      <div class="card-ttl"><span class="step-num">1</span> نوع الباكالوريا</div>
+      <div class="tog-g" id="bac-g">
+        <button class="tog" data-bac="آداب"           onclick="pickBac(this)">آداب</button>
+        <button class="tog" data-bac="رياضيات"        onclick="pickBac(this)">رياضيات</button>
+        <button class="tog" data-bac="علوم تجريبية"  onclick="pickBac(this)">علوم تجريبية</button>
+        <button class="tog" data-bac="اقتصاد وتصرف"  onclick="pickBac(this)">اقتصاد</button>
+        <button class="tog" data-bac="علوم تقنية"    onclick="pickBac(this)">تقنية</button>
+        <button class="tog" data-bac="علوم الإعلامية" onclick="pickBac(this)">إعلامية</button>
+        <button class="tog" data-bac="رياضة"          onclick="pickBac(this)">رياضة</button>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="card" id="c-grades" style="display:none">
+      <div class="card-ttl"><span class="step-num">2</span> معدلات المواد</div>
+      <div class="note">أدخل معدل كل مادة من 20. اترك ما لا تعرفه فارغاً.</div>
+      <div class="sub-grid" id="sub-grid"></div>
+      <div class="field" style="margin-top:11px">
+        <label>المعدل العام (MG) <span class="req">*</span></label>
+        <input type="number" id="mg" min="0" max="20" step="0.01" placeholder="مثال: 13.75">
+      </div>
+      <div class="field">
+        <label>الدورة</label>
+        <div class="sel-w">
+          <select id="session">
+            <option value="main">الدورة الرئيسية</option>
+            <option value="ctrl">دورة المراقبة</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="card" id="c-tenfil" style="display:none">
+      <div class="card-ttl"><span class="step-num">3</span> التنفيلات</div>
+      <div class="warn">التنفيلات تُضاف على مجموع T وليس على المعدل.</div>
+
+      <div class="f-sec">التنفيل الجغرافي</div>
+      <label class="chk-row">
+        <input type="checkbox" id="t-geo">
+        <span class="chk-label">أستحق التنفيل الجغرافي</span>
+        <span class="chk-tag">+7%</span>
+      </label>
+
+      <div class="f-sec" style="margin-top:10px">التنفيل الاجتماعي</div>
+      <label class="chk-row">
+        <input type="checkbox" id="t-soc">
+        <span class="chk-label">أيتام / معوّقون / أبناء شهداء</span>
+        <span class="chk-tag">+5%</span>
+      </label>
+      <label class="chk-row">
+        <input type="checkbox" id="t-sib">
+        <span class="chk-label">أخ/أخت في دورة المراقبة بنفس السنة</span>
+        <span class="chk-tag">+3%</span>
+      </label>
+
+      <div class="f-sec" style="margin-top:10px">التنفيل الرياضي</div>
+      <label class="chk-row">
+        <input type="checkbox" id="t-sp">
+        <span class="chk-label">رياضي نخبة وطنية</span>
+        <span class="chk-tag">+5%</span>
+      </label>
+    </div>
+
+    <button class="btn-calc" id="btn-go" style="display:none" onclick="calculate()">
+      احسب مجموعي ←
+    </button>
+
+    <!-- RESULT -->
+    <div id="result" style="display:none">
+
+      <div class="result-hero">
+        <div class="r-lbl">مجموع نقاطك النهائي (T)</div>
+        <div class="r-big" id="r-big">—</div>
+        <div class="r-sub">نقطة — نقاط آخر موجه بين 67 و199</div>
+      </div>
+
+      <div class="fml">
+        <div class="fml-lbl">الصيغة الإجمالية (FG)</div>
+        <div class="fml-eq" id="fml-eq">—</div>
+      </div>
+
+      <div class="bkd">
+        <div class="bkd-hdr">تفصيل الحساب</div>
+        <div class="bkd-row"><span class="bkd-k">الصيغة الإجمالية FG</span><span class="bkd-v" id="b-fg">—</span></div>
+        <div class="bkd-row" id="b-geo-r" style="display:none"><span class="bkd-k">تنفيل جغرافي +7%</span><span class="bkd-v" id="b-geo">—</span></div>
+        <div class="bkd-row" id="b-soc-r" style="display:none"><span class="bkd-k">تنفيل اجتماعي</span><span class="bkd-v" id="b-soc">—</span></div>
+        <div class="bkd-row" id="b-sp-r"  style="display:none"><span class="bkd-k">تنفيل رياضي +5%</span><span class="bkd-v" id="b-sp">—</span></div>
+        <div class="bkd-row tot"><span class="bkd-k"><strong>المجموع النهائي T</strong></span><span class="bkd-v" id="b-tot">—</span></div>
+      </div>
+
+      <!-- ★ CTA TO JADWAL ★ -->
+      <div class="cta-jadwal" id="cta-jdw" onclick="goToJadwal()">
+        <div class="cta-score">مجموعك: <strong id="cta-t">—</strong> نقطة</div>
+        <div class="cta-big">اكتشف الاختصاصات المتاحة لك</div>
+        <div class="cta-sub">انتقل تلقائياً إلى جدول نقاط آخر موجه مع مجموعك</div>
+        <div class="cta-arrow">⬇ انتقل الآن</div>
+      </div>
+
+      <button class="btn-calc btn-sec" onclick="resetCalc()">← حساب جديد</button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     PANEL 2 — JADWAL
+════════════════════════════════════ -->
+<div id="panel-jadwal" class="panel">
+  <div class="hero">
+    <h1>📊 نقاط آخر موجه 2023 / 2024 / 2025</h1>
+    <p>688 اختصاص — ابحث وقارن مجموعك</p>
+  </div>
+
+  <div class="wrap">
+    <div class="filter-card">
+      <div class="srch-w">
+        <span class="si">🔍</span>
+        <input type="text" id="jq" placeholder="ابحث بالاختصاص أو المؤسسة..." oninput="jFilter()">
+      </div>
+
+      <div class="f-sec">نوع الباكالوريا</div>
+      <div class="chips" id="j-chips">
+        <button class="chip active" data-bac="all"             onclick="jPickBac(this)">الكل</button>
+        <button class="chip" data-bac="آداب"                  onclick="jPickBac(this)">آداب</button>
+        <button class="chip" data-bac="رياضيات"               onclick="jPickBac(this)">رياضيات</button>
+        <button class="chip" data-bac="علوم تجريبية"         onclick="jPickBac(this)">علوم تجريبية</button>
+        <button class="chip" data-bac="اقتصاد وتصرف"         onclick="jPickBac(this)">اقتصاد</button>
+        <button class="chip" data-bac="علوم تقنية"           onclick="jPickBac(this)">تقنية</button>
+        <button class="chip" data-bac="علوم الإعلامية"       onclick="jPickBac(this)">إعلامية</button>
+        <button class="chip" data-bac="رياضة"                 onclick="jPickBac(this)">رياضة</button>
+      </div>
+
+      <div class="sel-row">
+        <div class="sel-w">
+          <select id="j-univ" onchange="jFilter()">
+            <option value="all">كل الجامعات</option>
+          </select>
+        </div>
+        <div class="sel-w">
+          <select id="j-cat" onchange="jFilter()">
+            <option value="all">كل الميادين</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="my-score-row">
+        <label>مجموعي (T):</label>
+        <input type="number" id="j-score" min="50" max="220" step="0.01"
+               placeholder="مثال: 135.5" oninput="jFilter()">
+        <span class="msr-hint">للمقارنة التلقائية</span>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <strong id="j-cnt">688</strong>&nbsp;اختصاص
+      <span class="stats-match" id="j-match"></span>
+    </div>
+
+    <div class="spec-list" id="j-list"></div>
+    <button class="btn-more" id="j-more" onclick="jLoadMore()" style="display:none">تحميل المزيد ▾</button>
+    <div class="pag-info" id="j-pag"></div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     PANEL 3 — AI ASSISTANT
+════════════════════════════════════ -->
+<div id="panel-ai" class="panel">
+  <div class="ai-hero">
+    <h1>🤖 مساعد التوجيه الذكي</h1>
+    <p>اسألني أي سؤال عن التوجيه الجامعي 2026</p>
+  </div>
+
+  <div class="chat-wrap" id="chat-wrap">
+
+    <!-- Quick suggestions -->
+    <div class="ai-suggestions" id="ai-sugs">
+      <button class="ai-sug" onclick="sendSug(this)">كيف أحسب مجموعي؟</button>
+      <button class="ai-sug" onclick="sendSug(this)">ما هو التنفيل الجغرافي؟</button>
+      <button class="ai-sug" onclick="sendSug(this)">ما الفرق بين FG وFS؟</button>
+      <button class="ai-sug" onclick="sendSug(this)">متى ينطلق التوجيه 2026؟</button>
+      <button class="ai-sug" onclick="sendSug(this)">كيف أملأ بطاقة التمنيات؟</button>
+      <button class="ai-sug" onclick="sendSug(this)">ما أفضل اختصاص لشعبة الرياضيات؟</button>
+    </div>
+
+    <!-- Context pill (shown when user has a score) -->
+    <div id="ctx-pill-wrap" style="display:none">
+      <span class="ctx-pill" onclick="injectContext()">
+        📊 استخدم مجموعي (<span id="ctx-score">—</span>) في السؤال
+      </span>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-msgs" id="chat-msgs">
+      <!-- welcome message injected by JS -->
+    </div>
+
+  </div>
+
+  <!-- Input bar (outside chat-wrap to stay fixed at bottom) -->
+  <div class="chat-input-bar">
+    <textarea class="chat-input" id="chat-input" rows="1"
+      placeholder="اكتب سؤالك هنا..."
+      onkeydown="handleKey(event)"
+      oninput="autoResize(this)"></textarea>
+    <button class="chat-send" id="chat-send" onclick="sendMessage()">➤</button>
+  </div>
+</div>
+
+<!-- ═══ MODAL OVERLAY ═══ -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-hdr">
+      <div>
+        <div class="modal-ttl" id="m-ttl">—</div>
+        <div class="modal-inst" id="m-inst">—</div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <span class="modal-univ-badge" id="m-univ">—</span>
+
+      <div class="chart-section">
+        <div class="chart-ttl">تطور نقاط آخر موجه</div>
+        <div class="mini-chart">
+          <canvas class="chart-canvas" id="m-canvas"></canvas>
+        </div>
+        <div id="m-trend" style="margin-top:8px"></div>
+      </div>
+
+      <table class="bac-table" id="m-table">
+        <thead>
+          <tr>
+            <th>الشعبة</th>
+            <th>2023</th>
+            <th>2024</th>
+            <th>2025 ★</th>
+          </tr>
+        </thead>
+        <tbody id="m-tbody"></tbody>
+      </table>
+    </div>
+    <div style="display:flex;gap:8px;padding:0 18px">
+      <button class="modal-cta" id="m-cta" onclick="useScore()" style="flex:1">
+        📊 استخدم هذه النقطة للمقارنة
+      </button>
+      <button class="modal-cta" onclick="askAIAboutSpec()" style="flex:1;background:var(--green)">
+        🤖 اسأل المساعد
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SCRIPT ═══ -->
 <script>
+const DB = {"meta":{"source":"وزارة التعليم العالي والبحث العلمي - تونس","title":"تطور مجموع نقاط آخر موجه للسنوات الثلاث الأخيرة","years":["2023","2024","2025"],"total":688,"universities":["جامعة الزيتونة","جامعة القيروان","جامعة المنستير","جامعة تونس","جامعة تونس المنار","جامعة جندوبة","جامعة سوسة","جامعة صفاقس","جامعة قابس","جامعة قرطاج","جامعة قفصة","جامعة منوبة"],"bac_types":["آداب","رياضيات","علوم تجريبية","اقتصاد وتصرف","علوم تقنية","علوم الإعلامية","رياضة"]},"specialites":[]};
+let SPECS = [];
+let UNIVS = [];
+
+/* Fetch the database when the page is loaded */
+async function loadDB() {
+  try {
+    const response = await fetch('data.json');
+    const data = await response.json();
+    SPECS = data.specialites;
+    UNIVS = data.meta.universities;
+    DB.specialites = SPECS;
+    DB.meta = data.meta;
+    
+    /* Populate selects once database is loaded */
+    populateSelects();
+    jFilter();
+  } catch (err) {
+    console.error('Error loading database:', err);
+    /* Fallback if data.json loading fails */
+    SPECS = [];
+    UNIVS = DB.meta.universities;
+    populateSelects();
+    jFilter();
+  }
+}
+
+function populateSelects() {
+  const jSelUniv = document.getElementById('j-univ');
+  jSelUniv.innerHTML = '<option value="all">كل الجامعات</option>';
+  UNIVS.forEach(u => { 
+    const o=document.createElement('option'); 
+    o.value=u; 
+    o.textContent=u; 
+    jSelUniv.appendChild(o); 
+  });
+  
+  const cats = [...new Set(SPECS.map(r=>r.categorie))].sort();
+  const jSelCat = document.getElementById('j-cat');
+  jSelCat.innerHTML = '<option value="all">كل الميادين</option>';
+  cats.forEach(c => { 
+    const o=document.createElement('option'); 
+    o.value=c; 
+    o.textContent=c; 
+    jSelCat.appendChild(o); 
+  });
+}
+
+window.addEventListener('DOMContentLoaded', loadDB);
+
+/* ── Tab switch ── */
+function switchTab(id, el) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('panel-'+id).classList.add('active');
+  window.scrollTo({top:0, behavior:'smooth'});
+  updateCtxPill();
+}
+
+/* ══════════════════════════════════
+   CALCULATOR
+══════════════════════════════════ */
 const SUBS = {
-  "آداب": [{id:'a',label:'عربية (A)'},{id:'ph',label:'فلسفة (PH)'},{id:'hg',label:'تاريخ وجغرافيا (HG)'},{id:'f',label:'فرنسية (F)'},{id:'ang',label:'إنقليزية (Ang)'}],
-  "رياضيات": [{id:'m',label:'رياضيات (M)'},{id:'sp',label:'فيزياء (SP)'},{id:'svt',label:'علوم الحياة (SVT)'},{id:'f',label:'فرنسية (F)'},{id:'ang',label:'إنقليزية (Ang)'}],
-  "علوم تجريبية": [{id:'m',label:'رياضيات (M)'},{id:'sp',label:'فيزياء (SP)'},{id:'svt',label:'علوم الحياة (SVT)'},{id:'f',label:'فرنسية (F)'},{id:'ang',label:'إنقليزية (Ang)'}],
-  "اقتصاد وتصرف": [{id:'ec',label:'اقتصاد (Ec)'},{id:'ge',label:'تصرف (Ge)'},{id:'m',label:'رياضيات (M)'},{id:'hg',label:'تاريخ (HG)'},{id:'f',label:'فرنسية (F)'},{id:'ang',label:'إنقليزية (Ang)'}],
-  "علوم تقنية": [{id:'te',label:'تكنولوجيا (TE)'},{id:'m',label:'رياضيات (M)'},{id:'sp',label:'فيزياء (SP)'},{id:'f',label:'فرنسية (F)'},{id:'ang',label:'إنقليزية (Ang)'}],
-  "علوم الإعلامية": [{id:'m',label:'رياضيات (M)'},{id:'algo',label:'خوارزميات (Algo)'},{id:'sp',label:'فيزياء (SP)'},{id:'sti',label:'أنظمة (STI)'},{id:'f',label:'فرنسية (F)'},{id:'ang',label:'إنقليزية (Ang)'}],
-  "رياضة": [{id:'sb',label:'علوم بيولوجية (SB)'},{id:'sp_sport',label:'اختصاص رياضي'},{id:'ep',label:'تربية بدنية (EP)'},{id:'sp',label:'فيزياء (SP)'},{id:'ph',label:'فلسفة (PH)'},{id:'f',label:'فرنسية (F)'},{id:'ang',label:'إنقليزية (Ang)'}]
+  "آداب":          [{id:"a",label:"عربية (A)"},{id:"ph",label:"فلسفة (PH)"},{id:"hg",label:"تاريخ وجغرافيا (HG)"},{id:"f",label:"فرنسية (F)"},{id:"ang",label:"إنقليزية (Ang)"}],
+  "رياضيات":       [{id:"m",label:"رياضيات (M)"},{id:"sp",label:"فيزياء (SP)"},{id:"svt",label:"علوم الحياة (SVT)"},{id:"f",label:"فرنسية (F)"},{id:"ang",label:"إنقليزية (Ang)"}],
+  "علوم تجريبية": [{id:"m",label:"رياضيات (M)"},{id:"sp",label:"فيزياء (SP)"},{id:"svt",label:"علوم الحياة (SVT)"},{id:"f",label:"فرنسية (F)"},{id:"ang",label:"إنقليزية (Ang)"}],
+  "اقتصاد وتصرف": [{id:"ec",label:"اقتصاد (Ec)"},{id:"ge",label:"تصرف (Ge)"},{id:"m",label:"رياضيات (M)"},{id:"hg",label:"تاريخ (HG)"},{id:"f",label:"فرنسية (F)"},{id:"ang",label:"إنقليزية (Ang)"}],
+  "علوم تقنية":   [{id:"te",label:"تكنولوجيا (TE)"},{id:"m",label:"رياضيات (M)"},{id:"sp",label:"فيزياء (SP)"},{id:"f",label:"فرنسية (F)"},{id:"ang",label:"إنقليزية (Ang)"}],
+  "علوم الإعلامية":[{id:"m",label:"رياضيات (M)"},{id:"algo",label:"خوارزميات (Algo)"},{id:"sp",label:"فيزياء (SP)"},{id:"sti",label:"أنظمة (STI)"},{id:"f",label:"فرنسية (F)"},{id:"ang",label:"إنقليزية (Ang)"}],
+  "رياضة":         [{id:"sb",label:"علوم بيولوجية (SB)"},{id:"sp_sport",label:"اختصاص رياضي"},{id:"ep",label:"تربية بدنية (EP)"},{id:"sp",label:"فيزياء (SP)"},{id:"ph",label:"فلسفة (PH)"},{id:"f",label:"فرنسية (F)"},{id:"ang",label:"إنقليزية (Ang)"}],
 };
-let selBac = null;
-function pickBac(el){
-  document.querySelectorAll('#bac-g .tog').forEach(b=>b.classList.remove('active'));
+
+let selBac = null, lastT = 0;
+
+function pickBac(el) {
+  document.querySelectorAll('#bac-g .tog').forEach(b => b.classList.remove('active'));
   el.classList.add('active');
   selBac = el.dataset.bac;
-  document.getElementById('branch-helper').textContent = `📌 الشعبة المختارة: ${selBac}`;
-  document.getElementById('progress-title').textContent = 'تم اختيار الشعبة';
-  document.getElementById('progress-sub').textContent = 'املأ المعدلات العامة والمواد المطلوبة ثم اضغط على الحساب.';
-  document.getElementById('progress-dot').style.background = 'var(--gold)';
-  document.getElementById('sub-grid').innerHTML = (SUBS[selBac]||[]).map(s => `<div class="field"><label>${s.label}</label><input type="number" id="s_${s.id}" min="0" max="20" step="0.01" placeholder="0.00"></div>`).join('');
-  document.getElementById('c-grades').style.display='block';
-  document.getElementById('c-tenfil').style.display='block';
+  const grid = document.getElementById('sub-grid');
+  grid.innerHTML = (SUBS[selBac]||[]).map(s =>
+    `<div class="field"><label>${s.label}</label>
+     <input type="number" id="s_${s.id}" min="0" max="20" step="0.01" placeholder="0.00"></div>`
+  ).join('');
+  document.getElementById('c-grades').style.display = 'block';
+  document.getElementById('c-tenfil').style.display = 'block';
+  document.getElementById('btn-go').style.display   = 'block';
+  document.getElementById('result').style.display   = 'none';
 }
-function v(id){return parseFloat(document.getElementById('s_'+id)?.value)||0;}
-function resetCalc(){
-  document.getElementById('mg').value = '';
-  document.getElementById('session').value = 'main';
-  document.getElementById('t-geo').checked = false;
-  document.getElementById('t-soc').checked = false;
-  document.getElementById('t-sib').checked = false;
-  document.getElementById('t-sp').checked = false;
-  document.querySelectorAll('#bac-g .tog').forEach(b=>b.classList.remove('active'));
-  document.getElementById('sub-grid').innerHTML = '';
-  document.getElementById('c-grades').style.display='none';
-  document.getElementById('c-tenfil').style.display='none';
-  document.getElementById('branch-helper').textContent = '🔎 لم يتم اختيار شعبة بعد';
-  document.getElementById('progress-title').textContent = 'حالة الملء';
-  document.getElementById('progress-sub').textContent = 'اختر شعبة ثم املأ المعدلات العامة والمواد المطلوبة.';
-  document.getElementById('progress-dot').style.background = 'var(--green)';
-  document.getElementById('reco-list').innerHTML = '';
-  document.getElementById('reco-box').style.display='none';
-  document.getElementById('resource-specialties').innerHTML = '';
-  document.getElementById('resource-universities').innerHTML = '';
-  document.getElementById('resource-panel').style.display='none';
-  document.getElementById('result').style.display='none';
-  document.getElementById('result').classList.remove('show');
-  selBac = null;
+
+function v(id){ return parseFloat(document.getElementById('s_'+id)?.value)||0; }
+
+function calcFG(bac, mg) {
+  if (bac==="آداب")          return {fg:4*mg+1.5*v('a')+1.5*v('ph')+v('hg')+v('f')+v('ang'),        eq:"4×MG + 1.5×A + 1.5×PH + HG + F + Ang"};
+  if (bac==="رياضيات")       return {fg:4*mg+2*v('m')+1.5*v('sp')+0.5*v('svt')+v('f')+v('ang'),     eq:"4×MG + 2×M + 1.5×SP + 0.5×SVT + F + Ang"};
+  if (bac==="علوم تجريبية") return {fg:4*mg+v('m')+1.5*v('sp')+1.5*v('svt')+v('f')+v('ang'),       eq:"4×MG + M + 1.5×SP + 1.5×SVT + F + Ang"};
+  if (bac==="اقتصاد وتصرف") return {fg:4*mg+1.5*v('ec')+1.5*v('ge')+0.5*v('m')+0.5*v('hg')+v('f')+v('ang'), eq:"4×MG + 1.5×Ec + 1.5×Ge + 0.5×M + 0.5×HG + F + Ang"};
+  if (bac==="علوم تقنية")   return {fg:4*mg+1.5*v('te')+1.5*v('m')+v('sp')+v('f')+v('ang'),        eq:"4×MG + 1.5×TE + 1.5×M + SP + F + Ang"};
+  if (bac==="علوم الإعلامية") return {fg:4*mg+1.5*v('m')+1.5*v('algo')+0.5*v('sp')+0.5*v('sti')+v('f')+v('ang'), eq:"4×MG + 1.5×M + 1.5×Algo + 0.5×SP + 0.5×STI + F + Ang"};
+  if (bac==="رياضة")         return {fg:4*mg+1.5*v('sb')+v('sp_sport')+0.5*v('ep')+0.5*v('sp')+0.5*v('ph')+v('f')+v('ang'), eq:"4×MG + 1.5×SB + Sp-sport + 0.5×EP + 0.5×SP + 0.5×PH + F + Ang"};
+  return {fg:0, eq:'—'};
 }
-function calcFG(bac, mg){
-  if(bac==='آداب') return {fg:4*mg+1.5*v('a')+1.5*v('ph')+v('hg')+v('f')+v('ang'), eq:'4×MG + 1.5×A + 1.5×PH + HG + F + Ang'};
-  if(bac==='رياضيات') return {fg:4*mg+2*v('m')+1.5*v('sp')+0.5*v('svt')+v('f')+v('ang'), eq:'4×MG + 2×M + 1.5×SP + 0.5×SVT + F + Ang'};
-  if(bac==='علوم تجريبية') return {fg:4*mg+v('m')+1.5*v('sp')+1.5*v('svt')+v('f')+v('ang'), eq:'4×MG + M + 1.5×SP + 1.5×SVT + F + Ang'};
-  if(bac==='اقتصاد وتصرف') return {fg:4*mg+1.5*v('ec')+1.5*v('ge')+0.5*v('m')+0.5*v('hg')+v('f')+v('ang'), eq:'4×MG + 1.5×Ec + 1.5×Ge + 0.5×M + 0.5×HG + F + Ang'};
-  if(bac==='علوم تقنية') return {fg:4*mg+1.5*v('te')+1.5*v('m')+v('sp')+v('f')+v('ang'), eq:'4×MG + 1.5×TE + 1.5×M + SP + F + Ang'};
-  if(bac==='علوم الإعلامية') return {fg:4*mg+1.5*v('m')+1.5*v('algo')+0.5*v('sp')+0.5*v('sti')+v('f')+v('ang'), eq:'4×MG + 1.5×M + 1.5×Algo + 0.5×SP + 0.5×STI + F + Ang'};
-  if(bac==='رياضة') return {fg:4*mg+1.5*v('sb')+v('sp_sport')+0.5*v('ep')+0.5*v('sp')+0.5*v('ph')+v('f')+v('ang'), eq:'4×MG + 1.5×SB + Sp-sport + 0.5×EP + 0.5×SP + 0.5×PH + F + Ang'};
-  return {fg:0,eq:'—'};
-}
-function calculate(){
-  if(!selBac){alert('اختر شعبتك أولاً');return;}
+
+function calculate() {
+  if (!selBac) { alert('اختر شعبتك أولاً'); return; }
   const mg = parseFloat(document.getElementById('mg').value);
-  if(!mg || mg<=0 || mg>20){alert('أدخل المعدل العام بشكل صحيح (0–20)');return;}
+  if (!mg || mg<=0 || mg>20) { alert('أدخل المعدل العام بشكل صحيح (0–20)'); return; }
   const isCtrl = document.getElementById('session').value === 'ctrl';
-  const mgAdj = isCtrl ? mg*(2/3) : mg;
-  const {fg,eq} = calcFG(selBac, mgAdj);
-  let T = fg, tGeo=0, tSoc=0, tSp=0;
-  if(document.getElementById('t-geo').checked) tGeo = T*0.07;
-  if(document.getElementById('t-soc').checked) tSoc += T*0.05;
-  if(document.getElementById('t-sib').checked) tSoc += T*0.03;
-  if(document.getElementById('t-sp').checked) tSp = T*0.05;
+  const mgAdj  = isCtrl ? mg*(2/3) : mg;
+
+  const {fg, eq} = calcFG(selBac, mgAdj);
+  let T = fg;
+  let tGeo=0, tSoc=0, tSp=0;
+
+  if (document.getElementById('t-geo').checked) tGeo = T*0.07;
+  if (document.getElementById('t-soc').checked) tSoc += T*0.05;
+  if (document.getElementById('t-sib').checked) tSoc += T*0.03;
+  if (document.getElementById('t-sp').checked)  tSp   = T*0.05;
+
   const Tf = T + tGeo + tSoc + tSp;
-  const note = Tf >= 180 ? 'مجموع مرتفع — لديك فرصة جيدة للانتقاء' : Tf >= 140 ? 'مجموع جيد — تابع التطوير والاختيار' : 'مجموع مناسب — راجع الخيارات المتاحة';
-  document.getElementById('r-big').textContent = Tf.toFixed(4);
-  document.getElementById('result-note').textContent = note;
-  document.getElementById('progress-title').textContent = 'تم الحساب بنجاح';
-  document.getElementById('progress-sub').textContent = 'راجع النتيجة أدناه واتخذ قرارك بثقة.';
-  document.getElementById('progress-dot').style.background = 'var(--blue2)';
-  document.getElementById('b-fg').textContent = fg.toFixed(4);
-  document.getElementById('b-geo').textContent = tGeo ? '+'+tGeo.toFixed(4) : '—';
-  document.getElementById('b-soc').textContent = tSoc ? '+'+tSoc.toFixed(4) : '—';
-  document.getElementById('b-sp').textContent = tSp ? '+'+tSp.toFixed(4) : '—';
-  document.getElementById('b-tot').textContent = Tf.toFixed(4);
-  const recos = Tf >= 180 ? ['طب بشري','هندسة مدنية','تقنيات طبية'] : Tf >= 150 ? ['إدارة أعمال','محاسبة','علوم إعلامية'] : Tf >= 120 ? ['تجارة','تربية','مراسلة'] : ['اختصاصات إدارية','اختصاصات تقنية','اختصاصات تربوية'];
-  document.getElementById('reco-list').innerHTML = recos.map(r => `<div class="reco-item">${r}</div>`).join('');
-  document.getElementById('reco-box').style.display='block';
-  const branchResources = {
-    'آداب': {specialties:['الإجازة في العربية','الإجازة في التاريخ','الإجازة في الجغرافيا'], universities:['جامعة تونس','جامعة الزيتونة','جامعة منوبة']},
-    'رياضيات': {specialties:['هندسة مدنية','علم الحاسوب','الرياضيات التطبيقية'], universities:['جامعة تونس','جامعة سوسة','جامعة المنستير']},
-    'علوم تجريبية': {specialties:['طب بشري','صيدلة','العلوم البيولوجية'], universities:['جامعة تونس','جامعة سوسة','جامعة قابس']},
-    'اقتصاد وتصرف': {specialties:['إدارة أعمال','محاسبة','اقتصاد'], universities:['جامعة تونس','جامعة القيروان','جامعة قابس']},
-    'علوم تقنية': {specialties:['هندسة كهربائية','هندسة ميكانيكية','تكنولوجيا المعلومات'], universities:['جامعة تونس','جامعة المنستير','جامعة سوسة']},
-    'علوم الإعلامية': {specialties:['علوم الإعلام','اتصال','صحافة'], universities:['جامعة تونس','جامعة سوسة','جامعة تونس المنار']},
-    'رياضة': {specialties:['تربية بدنية','التدريب الرياضي','التربية الرياضية'], universities:['جامعة سوسة','جامعة تونس','جامعة القيروان']}
+  lastT = Tf;
+
+  /* display */
+  document.getElementById('r-big').textContent   = Tf.toFixed(4);
+  document.getElementById('fml-eq').textContent  = 'FG = ' + eq;
+  document.getElementById('b-fg').textContent    = fg.toFixed(4);
+  document.getElementById('b-tot').textContent   = Tf.toFixed(4);
+  document.getElementById('cta-t').textContent   = Tf.toFixed(4);
+
+  const show = (id, val) => {
+    document.getElementById(id+'r').style.display = val ? 'flex' : 'none';
+    if (val) document.getElementById(id).textContent = '+' + val.toFixed(4);
   };
-  const chosen = branchResources[selBac] || {specialties:['اختصاصات متنوعة'], universities:['جامعة تونس']};
-  const specialtyLinks = chosen.specialties.map(item => `<a href="https://www.google.com/search?q=${encodeURIComponent('اختصاص '+item+' تونس')}" target="_blank" rel="noopener noreferrer">${item}</a>`).join('');
-  const universityLinks = chosen.universities.map(item => `<a href="https://www.google.com/search?q=${encodeURIComponent(item+' تونس')}" target="_blank" rel="noopener noreferrer">${item}</a>`).join('');
-  document.getElementById('resource-specialties').innerHTML = specialtyLinks;
-  document.getElementById('resource-universities').innerHTML = universityLinks;
-  document.getElementById('resource-panel').style.display='block';
-  document.getElementById('result').style.display='block';
-  document.getElementById('result').classList.add('show');
-  document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
+  show('b-geo-', tGeo); show('b-soc-', tSoc); show('b-sp-', tSp);
+
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('result').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function goToJadwal() {
+  /* pre-fill jadwal with bac + score */
+  if (selBac) {
+    document.querySelectorAll('#j-chips .chip').forEach(c => {
+      c.classList.toggle('active', c.dataset.bac === selBac);
+    });
+    jCurrentBac = selBac;
+  }
+  document.getElementById('j-score').value = lastT.toFixed(4);
+  /* switch tab */
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn')[1].classList.add('active');
+  document.getElementById('panel-jadwal').classList.add('active');
+  jFilter();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function resetCalc() {
+  selBac = null; lastT = 0;
+  document.querySelectorAll('#bac-g .tog').forEach(b => b.classList.remove('active'));
+  document.getElementById('c-grades').style.display = 'none';
+  document.getElementById('c-tenfil').style.display = 'none';
+  document.getElementById('btn-go').style.display   = 'none';
+  document.getElementById('result').style.display   = 'none';
+  document.getElementById('mg').value = '';
+  document.getElementById('sub-grid').innerHTML = '';
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* ══════════════════════════════════
+   JADWAL
+══════════════════════════════════ */
+let jCurrentBac = 'all';
+let jFiltered = [], jDisplayed = 0;
+const J_PAGE = 20;
+
+function jPickBac(el) {
+  document.querySelectorAll('#j-chips .chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  jCurrentBac = el.dataset.bac;
+  jFilter();
+}
+
+function jFilter() {
+  const q    = document.getElementById('jq').value.trim().toLowerCase();
+  const univ = document.getElementById('j-univ').value;
+  const cat  = document.getElementById('j-cat').value;
+  const myT  = parseFloat(document.getElementById('j-score').value)||0;
+
+  jFiltered = SPECS.filter(r => {
+    if (univ !== 'all' && r.universite !== univ) return false;
+    if (cat  !== 'all' && r.categorie  !== cat)  return false;
+    if (q && !r.specialite.includes(q) && !(r.institution||'').includes(q) && !(r.universite||'').includes(q)) return false;
+    if (jCurrentBac !== 'all') {
+      const sc = r.scores[jCurrentBac];
+      if (!sc) return false;
+      if (!sc['2025'] && !sc['2024'] && !sc['2023']) return false;
+    }
+    return true;
+  });
+
+  /* sort */
+  if (myT > 0 && jCurrentBac !== 'all') {
+    jFiltered.sort((a,b) => {
+      const sa = a.scores[jCurrentBac]?.['2025']||0;
+      const sb = b.scores[jCurrentBac]?.['2025']||0;
+      /* reachable first, then by proximity */
+      const okA = myT >= sa && sa > 0;
+      const okB = myT >= sb && sb > 0;
+      if (okA && !okB) return -1;
+      if (!okA && okB) return 1;
+      return Math.abs(myT-sa) - Math.abs(myT-sb);
+    });
+  } else {
+    jFiltered.sort((a,b) => a.specialite.localeCompare(b.specialite,'ar'));
+  }
+
+  const matchCnt = (myT > 0 && jCurrentBac !== 'all')
+    ? jFiltered.filter(r => { const s=r.scores[jCurrentBac]?.['2025']||0; return s>0 && myT>=s; }).length
+    : 0;
+
+  document.getElementById('j-cnt').textContent   = jFiltered.length;
+  document.getElementById('j-match').textContent = myT>0 && jCurrentBac!=='all' ? `✅ ${matchCnt} في متناولك` : '';
+
+  jDisplayed = 0;
+  document.getElementById('j-list').innerHTML = '';
+  jRenderPage();
+}
+
+function scCls(val, myT) {
+  if (!val || val===0) return 'na';
+  if (!myT) return 'sv-neutral';
+  const d = myT - val;
+  if (d>=5)  return 'sv-easy';
+  if (d>=-5) return 'sv-ok';
+  return 'sv-hard';
+}
+function mBadge(sc, myT) {
+  if (!myT || !sc || sc===0) return '';
+  const d = myT - sc;
+  if (d>=10) return '<span class="mbadge mb-easy">✅ في متناولك بسهولة</span>';
+  if (d>=0)  return '<span class="mbadge mb-ok">⚡ قريب — يمكنك المحاولة</span>';
+  if (d>=-10)return '<span class="mbadge mb-hard">⚠️ أقل بقليل</span>';
+  return '<span class="mbadge mb-no">❌ بعيد</span>';
+}
+
+function jRenderCard(r) {
+  const myT = parseFloat(document.getElementById('j-score').value)||0;
+  const bac  = jCurrentBac !== 'all' ? jCurrentBac : null;
+  let scHtml = '';
+
+  if (bac && r.scores[bac]) {
+    const sc = r.scores[bac];
+    ['2023','2024','2025'].forEach(y => {
+      const val = sc[y]||0;
+      const cls = y==='2025' ? scCls(val,myT) : 'sv-neutral';
+      scHtml += `<div class="sc-cell">
+        <div class="sc-yr">${y==='2025'?'2025 ★':y}</div>
+        <span class="sc-v ${val>0?cls:'sv-na'}">${val>0?val.toFixed(2):'—'}</span>
+      </div>`;
+    });
+  } else {
+    const best = Object.entries(r.scores).filter(([,v])=>v['2025']>0).sort((a,b)=>a[1]['2025']-b[1]['2025']);
+    if (best.length) {
+      const lo = best[0], hi = best[best.length-1];
+      scHtml = `<div style="grid-column:1/-1;font-size:11px;color:var(--muted);padding:2px 0">
+        أدنى 2025: <strong style="color:var(--blue)">${lo[1]['2025'].toFixed(2)}</strong> (${lo[0]}) &nbsp;|&nbsp;
+        أعلى: <strong style="color:var(--blue2)">${hi[1]['2025'].toFixed(2)}</strong> (${hi[0]})
+      </div>`;
+    } else {
+      scHtml = '<div class="sc-cell" style="grid-column:1/-1;color:var(--muted2);font-size:11px">لا توجد بيانات 2025</div>';
+    }
+  }
+
+  const sc2025 = bac ? (r.scores[bac]?.['2025']||0) : 0;
+  return `<div class="spec-card" onclick="openModal(${r.id})" style="cursor:pointer">
+    <div class="spec-head">
+      <div>
+        <div class="spec-name">${r.specialite}</div>
+        <div class="spec-inst">${r.institution || r.universite}</div>
+        ${mBadge(sc2025,myT)}
+      </div>
+      <span class="spec-univ-badge">${r.universite.replace('جامعة ','')}</span>
+    </div>
+    <div class="spec-scores">
+      ${bac?`<div style="grid-column:1/-1;font-size:10px;color:var(--muted);margin-bottom:3px">${bac}</div>`:''}
+      ${scHtml}
+    </div>
+  </div>`;
+}
+
+function jRenderPage() {
+  const list  = document.getElementById('j-list');
+  const slice = jFiltered.slice(jDisplayed, jDisplayed+J_PAGE);
+  if (!slice.length && !jDisplayed) {
+    list.innerHTML = '<div class="empty"><div class="ei">🔍</div><p>لا توجد نتائج</p></div>';
+    document.getElementById('j-more').style.display = 'none';
+    return;
+  }
+  slice.forEach(r => list.insertAdjacentHTML('beforeend', jRenderCard(r)));
+  jDisplayed += slice.length;
+  const rem = jFiltered.length - jDisplayed;
+  document.getElementById('j-more').style.display = rem>0 ? 'block' : 'none';
+  document.getElementById('j-pag').textContent = rem>0
+    ? `عرض ${jDisplayed} من ${jFiltered.length}`
+    : `عرض جميع ${jFiltered.length} اختصاص`;
+}
+function jLoadMore(){ jRenderPage(); }
+
+/* ══════════════════════════════════
+   AI CHAT
+══════════════════════════════════ */
+const AI_SYSTEM = `أنت مساعد متخصص في التوجيه الجامعي التونسي لسنة 2026، تعمل على موقع المسار الجامعي.
+لديك المعلومات الرسمية التالية:
+
+## الصيغ الإجمالية FG حسب الشعبة
+- آداب: FG = 4MG + 1.5A + 1.5PH + HG + F + Ang
+- رياضيات: FG = 4MG + 2M + 1.5SP + 0.5SVT + F + Ang
+- علوم تجريبية: FG = 4MG + M + 1.5SP + 1.5SVT + F + Ang
+- اقتصاد وتصرف: FG = 4MG + 1.5Ec + 1.5Ge + 0.5M + 0.5HG + F + Ang
+- علوم تقنية: FG = 4MG + 1.5TE + 1.5M + SP + F + Ang
+- علوم إعلامية: FG = 4MG + 1.5M + 1.5Algo + 0.5SP + 0.5STI + F + Ang
+- رياضة: FG = 4MG + 1.5SB + Sp-sport + 0.5EP + 0.5SP + 0.5PH + F + Ang
+
+## المجموع T والتنفيلات
+- المجموع T = FG (أو FG + FS للاختصاصات ذات الصيغة الخصوصية)
+- التنفيل الجغرافي: +7% من T (شرط: الاختصاص موجود في ولاية الطالب)
+- التنفيل الاجتماعي: +5% أيتام/معوّقون/أبناء شهداء، أو +3% أخ/أخت في دورة المراقبة
+- التنفيل الرياضي: +5% لرياضيي النخبة الوطنية
+- الاستثناءات من التنفيل الجغرافي: الطب، المراحل التحضيرية الهندسية، التربية والتعليم، الاختصاصات المتوفرة في كل جامعات الجمهورية
+
+## الروزنامة 2026
+- الجمعة 17 جويلية 2026: صدور بطاقة الاستيعاب والصيغة الخاصة بكل طالب
+- الثلاثاء 21 جويلية 2026: انطلاق عملية التوجيه الجامعي الرسمية على www.orientation.tn
+
+## إحصائيات قاعدة البيانات
+- 688 اختصاص جامعي في 12 جامعة تونسية
+
+## تعليمات الأسلوب
+- أجب بالعربية دائماً، بأسلوب واضح ومباشر ومشجّع
+- إذا ذكر الطالب مجموعه، ساعده فوراً في إيجاد الاختصاصات المناسبة
+- اذكر أرقاماً حقيقية عند الإجابة
+- إذا طُلب منك حساب مجموع، اطلب المعدلات وطبّق الصيغة خطوة بخطوة
+- لا تخترع نقاطاً أو اختصاصات غير موجودة في البيانات
+- إذا لم تعرف إجابة دقيقة، وجّه الطالب لاستخدام أدوات الموقع (الحاسبة أو الجدول)`;
+
+let chatHistory = [];
+let isTyping = false;
+
+/* welcome */
+(function initChat() {
+  const now = new Date();
+  const time = now.toLocaleTimeString('ar-TN', {hour:'2-digit', minute:'2-digit'});
+  appendMsg('ai',
+    'مرحباً! 👋 أنا مساعدك في التوجيه الجامعي 2026.\n\nيمكنني مساعدتك في:\n• حساب مجموعك وتنفيلاتك\n• فهم نظام التوجيه والصيغ الرسمية\n• اختيار الاختصاصات المناسبة\n• الإجابة على أي سؤال عن الباكالوريا والتوجيه\n\nاسألني بكل حرية! 🎓',
+    time
+  );
+})();
+
+function appendMsg(role, text, time) {
+  const msgs = document.getElementById('chat-msgs');
+  const isAI = role === 'ai';
+  const div   = document.createElement('div');
+  div.className = `msg ${role}`;
+
+  const formattedText = text
+    .replace(/\n/g, '<br>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+  div.innerHTML = `
+    <div class="msg-avatar">${isAI ? '🤖' : 'أنت'}</div>
+    <div>
+      <div class="msg-bubble">${formattedText}</div>
+      ${time ? `<div class="msg-time">${time}</div>` : ''}
+    </div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+  return div;
+}
+
+function showTyping() {
+  const msgs = document.getElementById('chat-msgs');
+  const div  = document.createElement('div');
+  div.className = 'msg ai';
+  div.id = 'typing-indicator';
+  div.innerHTML = `
+    <div class="msg-avatar">🤖</div>
+    <div class="msg-bubble">
+      <div class="typing-dots"><span></span><span></span><span></span></div>
+    </div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function deleteTyping() {
+  const el = document.getElementById('typing-indicator');
+  if (el) el.remove();
+}
+
+async function sendMessage() {
+  if (isTyping) return;
+  const inp = document.getElementById('chat-input');
+  const txt = inp.value.trim();
+  if (!txt) return;
+
+  /* hide suggestions after first message */
+  document.getElementById('ai-sugs').style.display = 'none';
+
+  const now  = new Date().toLocaleTimeString('ar-TN', {hour:'2-digit', minute:'2-digit'});
+  appendMsg('user', txt, now);
+  inp.value = '';
+  inp.style.height = '';
+  chatHistory.push({role:'user', content: txt});
+
+  isTyping = true;
+  document.getElementById('chat-send').disabled = true;
+  showTyping();
+
+  /* check if context pill score exists */
+  const myT = parseFloat(document.getElementById('j-score').value)||0;
+  const bac  = jCurrentBac !== 'all' ? jCurrentBac : null;
+  let contextNote = '';
+  if (myT > 0) contextNote = `\n\n[معلومة إضافية: مجموع هذا الطالب هو ${myT.toFixed(4)} نقطة${bac ? ' لشعبة '+bac : ''}]`;
+
+  try {
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        system: AI_SYSTEM + contextNote,
+        messages: chatHistory
+      })
+    });
+    const data = await res.json();
+    const reply = data.reply || 'عذراً، حدث خطأ. حاول مرة أخرى.';
+
+    deleteTyping();
+    const replyTime = new Date().toLocaleTimeString('ar-TN', {hour:'2-digit', minute:'2-digit'});
+    appendMsg('ai', reply, replyTime);
+    chatHistory.push({role:'assistant', content: reply});
+
+    /* keep history manageable */
+    if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
+
+  } catch(err) {
+    deleteTyping();
+    appendMsg('ai', '⚠️ تعذّر الاتصال بالمساعد. تأكد من اتصالك بالإنترنت وحاول مجدداً.', '');
+  }
+
+  isTyping = false;
+  document.getElementById('chat-send').disabled = false;
+  document.getElementById('chat-input').focus();
+}
+
+function sendSug(el) {
+  document.getElementById('chat-input').value = el.textContent;
+  sendMessage();
+}
+
+function handleKey(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendMessage();
+  }
+}
+
+function autoResize(el) {
+  el.style.height = '';
+  el.style.height = Math.min(el.scrollHeight, 100) + 'px';
+}
+
+function injectContext() {
+  const myT = parseFloat(document.getElementById('j-score').value)||0;
+  const bac  = jCurrentBac !== 'all' ? jCurrentBac : '';
+  if (myT > 0) {
+    const txt = `مجموعي هو ${myT.toFixed(4)} نقطة${bac ? ' وشعبتي '+bac : ''}، ما هي الاختصاصات المناسبة لي؟`;
+    document.getElementById('chat-input').value = txt;
+    document.getElementById('chat-input').focus();
+  }
+}
+
+/* show context pill when score is set */
+function updateCtxPill() {
+  const myT = parseFloat(document.getElementById('j-score').value)||0;
+  const pill = document.getElementById('ctx-pill-wrap');
+  if (myT > 0 && document.getElementById('panel-ai').classList.contains('active')) {
+    document.getElementById('ctx-score').textContent = myT.toFixed(2);
+    pill.style.display = 'block';
+  } else {
+    pill.style.display = 'none';
+  }
+}
+
+/* Smart suggestions based on bac + score */
+function updateAISuggestions() {
+  const bac  = jCurrentBac !== 'all' ? jCurrentBac : null;
+  const myT  = parseFloat(document.getElementById('j-score').value)||0;
+  const sugs = document.getElementById('ai-sugs');
+  if (!sugs || sugs.style.display === 'none') return; /* already chatting */
+
+  let questions = [];
+  if (myT > 0 && bac) {
+    questions = [
+      `مجموعي ${myT.toFixed(1)} نقطة شعبة ${bac}، ما هي أفضل اختصاصاتي؟`,
+      `هل يمكنني الالتحاق بالطب بمجموع ${myT.toFixed(1)}؟`,
+      `ما هي الاختصاصات التقنية المناسبة لمجموع ${myT.toFixed(1)}؟`,
+      `كيف أستعمل التنفيل الجغرافي لرفع مجموعي؟`,
+      `متى ينطلق التوجيه 2026 وما هي الخطوات؟`,
+      `ما الفرق بين الإجازة والمرحلة التحضيرية؟`,
+    ];
+  } else if (bac) {
+    questions = [
+      `ما أفضل اختصاصات شعبة ${bac}؟`,
+      `كيف أحسب مجموعي لشعبة ${bac}؟`,
+      `ما هي الجامعات الأفضل لشعبة ${bac}؟`,
+      `متى ينطلق التوجيه 2026؟`,
+      `ما هو التنفيل الجغرافي وكيف يُحسب؟`,
+      `ما الفرق بين FG وFS؟`,
+    ];
+  } else {
+    questions = [
+      'كيف أحسب مجموعي؟',
+      'ما هو التنفيل الجغرافي؟',
+      'ما الفرق بين FG وFS؟',
+      'متى ينطلق التوجيه 2026؟',
+      'كيف أملأ بطاقة التمنيات؟',
+      'ما أفضل اختصاص للرياضيات؟',
+    ];
+  }
+  sugs.innerHTML = questions.map(q =>
+    `<button class="ai-sug" onclick="sendSug(this)">${q}</button>`
+  ).join('');
+}
+
+/* Hook suggestions refresh to tab switch */
+const _origSwitch = switchTab;
+window.switchTab = function(id, el) {
+  _origSwitch(id, el);
+  if (id === 'ai') updateAISuggestions();
+};
+
+let modalRec = null;
+
+function openModal(id) {
+  const r = SPECS.find(s => s.id === id);
+  if (!r) return;
+  modalRec = r;
+
+  document.getElementById('m-ttl').textContent  = r.specialite;
+  document.getElementById('m-inst').textContent = r.institution || r.universite;
+  document.getElementById('m-univ').textContent = r.universite;
+
+  const myT = parseFloat(document.getElementById('j-score').value)||0;
+  const bac  = jCurrentBac !== 'all' ? jCurrentBac : null;
+
+  /* Build table */
+  const BAC_ORDER = ['آداب','رياضيات','علوم تجريبية','اقتصاد وتصرف','علوم تقنية','علوم الإعلامية','رياضة'];
+  const tbody = document.getElementById('m-tbody');
+  tbody.innerHTML = '';
+
+  const allRows = [];
+  BAC_ORDER.forEach(b => {
+    const sc = r.scores[b];
+    if (!sc) return;
+    const v23 = sc['2023']||0, v24 = sc['2024']||0, v25 = sc['2025']||0;
+    if (!v23 && !v24 && !v25) return;
+    allRows.push({b, v23, v24, v25});
+
+    const cls = val => {
+      if (!val) return 'td-na';
+      if (!myT)  return '';
+      const d = myT - val;
+      if (d>=5) return 'td-easy'; if (d>=-5) return 'td-ok'; return 'td-hard';
+    };
+    const fmt = val => val ? `<span class="${cls(val)}">${val.toFixed(2)}</span>` : '<span class="td-na">—</span>';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${b}</td><td>${fmt(v23)}</td><td>${fmt(v24)}</td><td>${fmt(v25)}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  /* Trend */
+  if (bac && r.scores[bac]) {
+    const sc = r.scores[bac];
+    const v23 = sc['2023']||0, v25 = sc['2025']||0;
+    if (v23 && v25) {
+      const diff = v25 - v23;
+      const sign = diff > 0.5 ? '↑' : diff < -0.5 ? '↓' : '→';
+      const cls  = diff > 0.5 ? 'trend-up' : diff < -0.5 ? 'trend-dn' : 'trend-flat';
+      const txt  = diff > 0.5 ? `ارتفعت ${diff.toFixed(2)} نقطة بين 2023 و2025`
+                 : diff < -0.5 ? `انخفضت ${Math.abs(diff).toFixed(2)} نقطة بين 2023 و2025`
+                 : 'مستقرة بين 2023 و2025';
+      document.getElementById('m-trend').innerHTML =
+        `<span class="trend ${cls}">${sign} ${txt} (${bac})</span>`;
+    } else {
+      document.getElementById('m-trend').innerHTML = '';
+    }
+  } else {
+    document.getElementById('m-trend').innerHTML = '';
+  }
+
+  /* Chart */
+  drawModalChart(allRows, bac, myT);
+
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeModalOutside(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModal();
+}
+
+function useScore() {
+  if (!modalRec) return;
+  const bac = jCurrentBac !== 'all' ? jCurrentBac : null;
+  if (!bac) { closeModal(); return; }
+  const sc = modalRec.scores[bac]?.['2025'];
+  if (sc) {
+    document.getElementById('j-score').value = sc.toFixed(4);
+    jFilter();
+  }
+  closeModal();
+}
+
+function askAIAboutSpec() {
+  if (!modalRec) return;
+  const bac = jCurrentBac !== 'all' ? jCurrentBac : '';
+  const sc  = bac && modalRec.scores[bac] ? modalRec.scores[bac]['2025'] : 0;
+  const myT = parseFloat(document.getElementById('j-score').value)||0;
+  let txt = `أريد معرفة المزيد عن اختصاص "${modalRec.specialite}" في ${modalRec.universite}.`;
+  if (sc)  txt += ` نقطة آخر موجه 2025 هي ${sc.toFixed(2)}`;
+  if (myT) txt += ` ومجموعي ${myT.toFixed(2)} — هل أنا مؤهل؟`;
+  closeModal();
+  /* switch to AI tab */
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn')[2].classList.add('active');
+  document.getElementById('panel-ai').classList.add('active');
+  document.getElementById('ai-sugs').style.display = 'none';
+  document.getElementById('chat-input').value = txt;
+  document.getElementById('chat-input').focus();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* ── Mini bar chart (pure canvas, no libs) ── */
+function drawModalChart(rows, activeBac, myT) {
+  const canvas = document.getElementById('m-canvas');
+  const ctx    = canvas.getContext('2d');
+  const dpr    = window.devicePixelRatio || 1;
+  const W      = canvas.parentElement.clientWidth - 20;
+  const H      = canvas.parentElement.clientHeight - 42;
+  canvas.width  = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width  = W + 'px';
+  canvas.style.height = H + 'px';
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, W, H);
+
+  /* choose rows to show */
+  let display = rows;
+  if (activeBac) display = rows.filter(r => r.b === activeBac);
+  if (!display.length) display = rows.slice(0, 4);
+  if (!display.length) return;
+
+  const years  = ['2023','2024','2025'];
+  const COLORS = ['#93c5fd','#60a5fa','#1a3a6b'];
+  const GOLD   = '#f5b800';
+
+  /* compute range */
+  const allVals = display.flatMap(r => [r.v23,r.v24,r.v25]).filter(v=>v>0);
+  if (!allVals.length) return;
+  const minV = Math.max(0, Math.min(...allVals) - 10);
+  const maxV = Math.max(...allVals) + 8;
+
+  const groupW  = W / (display.length + 1);
+  const barW    = Math.min(18, groupW / (years.length + 1));
+  const chartH  = H - 20;
+
+  const toY = v => chartH - ((v - minV) / (maxV - minV)) * (chartH - 4);
+
+  display.forEach((row, gi) => {
+    const vals  = [row.v23, row.v24, row.v25];
+    const gx    = groupW * (gi + 0.6);
+    const totalW = barW * 3 + 4;
+    const startX = gx - totalW / 2;
+
+    vals.forEach((val, yi) => {
+      if (!val) return;
+      const x = startX + yi * (barW + 2);
+      const y = toY(val);
+      const h = chartH - y;
+      ctx.fillStyle = yi === 2 ? COLORS[2] : COLORS[yi];
+      ctx.beginPath();
+      ctx.roundRect(x, y, barW, h, [3,3,0,0]);
+      ctx.fill();
+    });
+
+    /* label */
+    ctx.fillStyle = '#6b7280';
+    ctx.font = `${Math.min(10, barW*2.5)}px Cairo, sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.fillText(row.b.length > 5 ? row.b.slice(0,5) : row.b, gx, chartH + 14);
+  });
+
+  /* myT line */
+  if (myT > minV && myT < maxV) {
+    const ly = toY(myT);
+    ctx.strokeStyle = GOLD;
+    ctx.lineWidth   = 1.5;
+    ctx.setLineDash([5,4]);
+    ctx.beginPath(); ctx.moveTo(0, ly); ctx.lineTo(W, ly); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = GOLD;
+    ctx.font = 'bold 10px Cairo, sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('مجموعك', 4, ly - 4);
+  }
 }
 </script>
 </body>
