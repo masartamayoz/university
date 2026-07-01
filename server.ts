@@ -58,18 +58,18 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-/* Serve Frontend as static files from public (dev) or dist/public (production) */
+/* Serve Frontend as static files from root (dev) or dist (production) */
 async function startServer() {
   const PORT = 3000;
 
-  const publicPath = process.env.NODE_ENV === "production"
-    ? path.join(process.cwd(), "dist", "public")
-    : path.join(process.cwd(), "public");
+  const staticPath = process.env.NODE_ENV === "production"
+    ? path.join(process.cwd(), "dist")
+    : path.join(process.cwd());
 
-  app.use(express.static(publicPath));
+  app.use(express.static(staticPath));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(publicPath, "index.html"));
+    res.sendFile(path.join(staticPath, "index.html"));
   });
 
   app.listen(PORT, "0.0.0.0", () => {
