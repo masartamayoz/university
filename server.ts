@@ -1,7 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 import express from "express";
 import path from "path";
-import { createServer as createViteServer } from "vite";
 
 const app = express();
 app.use(express.json());
@@ -59,27 +58,19 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-/* Serve Frontend via Vite in Dev, or Express Static in Production */
+/* Serve Frontend as static files from public (dev) or dist/public (production) */
 async function startServer() {
   const PORT = 3000;
 
-  if (process.env.NODE_ENV !== "production") {
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: "spa",
-    });
-    app.use(vite.middlewares);
-  } else {
-    const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    /* Direct routing for masartamayoz_university.html if requested directly in prod */
-    app.get("/masartamayoz_university.html", (req, res) => {
-      res.sendFile(path.join(distPath, "masartamayoz_university.html"));
-    });
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
-    });
-  }
+  const publicPath = process.env.NODE_ENV === "production"
+    ? path.join(process.cwd(), "dist", "public")
+    : path.join(process.cwd(), "public");
+
+  app.use(express.static(publicPath));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(publicPath, "index.html"));
+  });
 
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running on http://localhost:${PORT}`);
